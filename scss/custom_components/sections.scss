@@ -1,0 +1,88 @@
+/* Media Queries  with custom classes*/
+
+@mixin resizeFont($fontSize){
+
+}
+
+/* hero image is for images at top of pages */
+@media only screen and (max-width: 500px) {
+	.lb-hero-image .fl-row-content-wrap{
+		 padding: 30px 0px !important;
+	}
+	.lb-hero-image h1{
+		font-size: $h3-fontsize !important;
+	}
+}
+
+@media only screen and (min-width: 500px) {
+	.lb-hero-image .fl-row-content-wrap{
+		 padding: 160px 0px !important;
+	}
+	.lb-hero-image h1{
+		font-size: $h1-fontsize!important;
+	}
+}
+
+
+.lb-section .fl-row-content-wrap{ 
+	padding: 20px  20px !important;
+
+	.fl-heading-text {
+		font-size: $sectionTitleFontSize !important;
+		color: $lightBgHeaderText !important;
+	}
+}
+
+//styles background adn text for light sections ==================================================
+.lb-section-light .fl-row-content-wrap{
+	 background-color: $lightBg !important; 
+	
+	 .fl-heading-text{	color: $lightBgHeaderText !important; }
+
+	  p{ 	color: $lightBgBodyText !important;	}
+
+}
+
+// styles background and text for dark sections =================================================
+.lb-section-dark .fl-row-content-wrap{
+	background-color: $darkBg !important;
+
+	.fl-heading-text{	color: $darkBgHeaderText !important; }
+	p{ color: $darkBgBodyText !important;}
+}
+
+// style page title===============================================================================
+.lb-page-title h1, .lb-page-title h2, .lb-page-title h3, .lb-page-title h4 {
+	color: $pageTitleColor !important ; 
+	font-size: $pageTitleFontSize !important ;
+}
+
+// classes for section backgrounds controls inner text color as well =============================
+.lb-light-bg .fl-row-content-wrap, .lb-light-bg .pp-infobox-wrap .pp-infobox{
+	background-color: $lightBg !important;
+}
+
+.lb-dark-bg .fl-row-content-wrap{
+	background-color: $darkBg !important; 
+}
+
+.lb-light-bg h1, .lb-light-bg  h2, .lb-light-bg h3, .lb-light-bg  h4 { 
+		color: $lightBgHeaderText !important;
+}
+
+.lb-light-bg p{ 	
+	color: $lightBgBodyText !important;
+ }
+
+.lb-dark-bg h1, .lb-dark-bg  h2, .lb-dark-bg h3, .lb-dark-bg  h4, .lb-dark-bg span a { 	
+	color: $darkBgHeaderText !important; 
+}
+
+.lb-dark-bg p { 
+	color: $darkBgBodyText !important 
+}
+
+/*spaces columns vertically */ 
+.lb-vertical-col-space .fl-col-group{
+	margin-top: 10px !important; 
+}

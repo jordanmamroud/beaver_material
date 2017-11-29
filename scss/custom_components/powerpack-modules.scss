@@ -1,0 +1,75 @@
+
+/* powerpack element styling */
+
+.pp-infobox-title {
+	font-size:$largeText !important; 
+}
+
+.pp-infobox-description{ 	font-size: $smallText !important;}
+
+.pp-button-wrap {
+	margin-top:20px;
+	margin-bottom:15px;
+}
+.pp-button-wrap a{
+	border-radius:4px 4px 4px 4px !important;	
+	font-size: 18px !important;
+}
+
+ 
+/***********Custom styles for dual buttons ******************/
+// styling for first button in dual button
+.lb-dual-btn-1 .pp-dual-button-1 .pp-button{
+	 @include addButtonStyle($accentColor, $accentText)
+}
+
+.lb-dual-btn-1 .pp-dual-button-2 .pp-button{
+	border: 1px solid #fff !important;
+    color: #fff !important; 
+    background-color: $transparentColor !important;
+    &:hover {
+      background-color: lighten(#fff , 10%) !important; 
+      color: $accentColor !important; 
+	}
+	&:hover span{
+		color: $accentColor !important; 
+	}
+	& span, i {color: #fff !important; }
+}
+
+/*************** custom styles for pp-infobox *****************************/
+
+.lb-infobox-1 .pp-infobox-title{
+		font-size: 30px !important;
+		border-bottom: 2px solid $accentColor;
+		padding:10px 60px;
+		display:inline-block;
+}
+
+/*styling for advanced tabs */
+ .pp-tab-active .pp-tab-label-inner:after {
+	background:$accentColor !important;
+}
+
+.pp-tab-active .pp-tab-label-inner span{
+		color: #fff !important;
+}
+.pp-tab-label-inner span{
+	font-size:18px;
+}
+.pp-tabs-panel-content p{
+	font-size: 16px;
+}
+
+/*styling for advanced accordion */
+.fl-accordion-item:hover {
+		background-color: $accentColor !important;
+		color:#fff;
+}
+
+.fl-accordion .fl-accordion-item-active {
+		background-color: $accentColor;
+		color:#fff;
+}
+
+.fl-accordion .fl-accordion-item-active {	font-size:16px; }

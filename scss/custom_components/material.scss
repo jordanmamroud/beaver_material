@@ -1,0 +1,51 @@
+@mixin addMaterial{
+    @extend .z-depth-1;
+  transition: .2s ease-out;
+   border-radius: $borderRadius;
+  cursor: pointer;
+  &:hover {
+    @extend .z-depth-1-half;
+  }
+}
+
+@mixin addMaterialInactive(){
+     @extend .z-depth-1;
+  transition: .2s ease-out;
+  cursor: pointer;
+}
+
+.lb-img .fl-photo-content img{
+    @include addMaterial();
+}
+
+.lb-img-inactive .fl-photo-content img{
+    @include addMaterial();
+}
+
+//used for elevating columns in rows
+.lb-elevate-col .fl-col-content{
+    @include addMaterialInactive();
+}
+
+// used for elevating content module containers.
+.lb-elevate .fl-module-content:first-child {
+    @include addMaterial();
+}
+
+/* a cool material design look separator */
+.lb-shadow-separator .fl-separator{
+    height: 1px;
+    overflow: visible;
+    border: none;
+    width: $separatorWidth !important;
+}
+
+.lb-shadow-separator .fl-separator:after {
+	display: block;
+    margin-top: 10px;
+    height: 6px;
+    width: 100%;
+    content: '';
+    background: -webkit-radial-gradient(50% -50% ellipse,rgba(0,0,0,.5) 0,rgba(255,255,255,0) 65%);
+	background: radial-gradient(ellipse at 50% -50%,rgba(0,0,0,.5) 0,rgba(255,255,255,0) 65%);
+} 

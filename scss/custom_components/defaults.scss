@@ -1,0 +1,22 @@
+
+@media only screen and (max-width: 900px) {
+	.fl-module-content{
+        margin: 20px 10px 20px 10px !important; 
+    }
+}
+
+.fl-form-field input:active, .lb-accent textarea:active,.lb-accent input:focus ,.lb-accent textarea:focus {
+	 border-color: $accentColor !important;
+}
+
+.fl-callout-title-link:hover{
+	color: $accentColor !important;
+}
+
+
+// does not belong here.
+
+/*spaces columns vertically */ 
+.lb-vertical-col-space .fl-col-group{
+	margin-top: 10px !important; 
+}

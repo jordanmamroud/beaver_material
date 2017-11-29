@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+
+
+
+// Reset
+@import "components/normalize";
+
+// components
+@import "components/color";
+@import "custom_components/variables";
+
+@import "components/global";
+@import "components/typography";
+
+@import "custom_components/header";
+@import "custom_components/material";
+@import "custom_components/buttons";
+@import "custom_components/powerpack-modules";
+@import "custom_components/sections";
+@import "custom_components/defaults";
+
+/* ** **************************************** Levabtye Website ****************************** */
+
+
+/*variables * */
+$primaryColor:#0a2972 ;
+$primaryText: #fff; 
+
+$accentColor: #ca4a82;
+$accentText: #fff; 
+
+$tertiaryColor: #aaa;
+$tertiaryText: #000; 
+
+$headerActive: #aaa;
+$headerInactive:#000;
+$headerHover: #ca4a82;
+$headerBg:rgba(242,242,242, 1);
+
+$lightBgHeaderText: #000;
+$lightBgBodyText: #aaa; 
+
+$darkBg: #0d3542;
+$darkBgHeaderText: #fff;
+$darkBgBodyText: #fff;
+ 
+$defaultFontSize: 20px; 
+$defaultBgColor: #f9f9f9;
+$defaultTextColor:#808080;
+$defaultFontFamily:  Helvetica, Verdana, Arial, sans-serif;
+
+$pageTitleColor: #fff; 
+$pageTitleFontSize: 36px; 
+$sectionTitleColor: #0a2972;
+$sectionTitleFontSize: 30px ;
+
+$smallText: 16px; 
+$mediumText: 24px ;
+$largeText: 26px ;
+
+/*	******************************* Custom site code ************************************* */
+
+
+/* ************************End Custom Site Code **********************************************/
+
+ 
+
+ 
+ 
