@@ -1,0 +1,19 @@
+.lb-search-bar{
+    @extend .z-depth-4 ;
+    width: 50% ; 
+    border-radius: $borderRadius; 
+     position: absolute;
+  top: 90%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+.lb-search-bar:hover{
+     @extend  .hoverable ;
+     
+}
+
+.lb-search-bar:focus{
+    border: 1.5px solid $accentColor;
+}
