@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,uCAAuC;AACvC,8CAA8C;AAC9C,yCAA0C;EACzC,mCAAmC;IACjC,OAAO,EAAE,mBAAmB;;EAE9B,iBAAiB;IAChB,SAAS,EAAC,eAAe;AAI3B,yCAA0C;EACzC,mCAAmC;IACjC,OAAO,EAAE,oBAAoB;;EAE/B,iBAAiB;IAChB,SAAS,EAAC,eAAe",
-"sources": ["../../scss/custom_components/sections.scss"],
-"names": [],
-"file": "sections.css"
-}

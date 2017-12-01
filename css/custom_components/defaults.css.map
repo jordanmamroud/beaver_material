@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AACA,yCAA0C;EACzC,kBAAkB;IACX,MAAM,EAAE,8BAA8B",
-"sources": ["../../scss/custom_components/defaults.scss"],
-"names": [],
-"file": "defaults.css"
-}
