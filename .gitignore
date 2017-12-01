@@ -1,2 +1,3 @@
-# Ignore configuration files that may contain sensitive information.
-scss/scss_customizable/styles.scss
+
+scss/scss_customizable
+css/css_customizable
