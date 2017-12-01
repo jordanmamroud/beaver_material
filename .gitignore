@@ -1,6 +1,6 @@
 style.scss
 style.css
-variables.scss
-variables.css
+variables_in_use.scss
+variables_in_use.css
 .sass-cache/
 *.css.map
