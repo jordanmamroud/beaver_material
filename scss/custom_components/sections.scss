@@ -1,31 +1,6 @@
-/* Media Queries  with custom classes*/
-
-@mixin resizeFont($fontSize){
-
-}
-
-/* hero image is for images at top of pages */
-@media only screen and (max-width: 500px) {
-	.lb-hero-image .fl-row-content-wrap{
-		 padding: 30px 0px !important;
-	}
-	.lb-hero-image h1{
-		font-size: $h3-fontsize !important;
-	}
-}
-
-@media only screen and (min-width: 500px) {
-	.lb-hero-image .fl-row-content-wrap{
-		 padding: 160px 0px !important;
-	}
-	.lb-hero-image h1{
-		font-size: $h1-fontsize!important;
-	}
-}
-
 
 .lb-section .fl-row-content-wrap{ 
-	padding: 20px  20px !important;
+	padding: $sectionVerticalPadding  20px !important;
 
 	.fl-heading-text {
 		font-size: $sectionTitleFontSize !important;

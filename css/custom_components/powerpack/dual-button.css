@@ -1,25 +1,26 @@
 /*
-Error: Undefined variable: "$sectionVerticalPadding".
-        on line 3 of scss/custom_components/sections.scss
+Error: Undefined mixin 'addButtonStyle'.
+        on line 4 of scss/custom_components/powerpack/dual-button.scss, in `addButtonStyle'
+        from line 4 of scss/custom_components/powerpack/dual-button.scss
 
-1: 
-2: .lb-section .fl-row-content-wrap{ 
-3: 	padding: $sectionVerticalPadding  20px !important;
-4: 
-5: 	.fl-heading-text {
-6: 		font-size: $sectionTitleFontSize !important;
-7: 		color: $lightBgHeaderText !important;
-8: 	}
+1: /***********Custom styles for dual buttons ******************\/
+2: // styling for first button in dual button
+3: .lb-dual-btn-1 .pp-dual-button-1 .pp-button{
+4: 	 @include addButtonStyle($accentColor, $accentText)
+5: }
+6: 
+7: .lb-dual-btn-1 {
+8: 	.pp-dual-button-1 .pp-button{
+9: 		 @include addButtonStyle($accentColor, $accentText);
 
 Backtrace:
-scss/custom_components/sections.scss:3
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/script/tree/variable.rb:49:in `_perform'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/script/tree/node.rb:50:in `perform'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/script/tree/list_literal.rb:75:in `block in _perform'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/script/tree/list_literal.rb:75:in `map'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/script/tree/list_literal.rb:75:in `_perform'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/script/tree/node.rb:50:in `perform'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
+scss/custom_components/powerpack/dual-button.scss:4:in `addButtonStyle'
+scss/custom_components/powerpack/dual-button.scss:4
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:98:in `block in with_mixin'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:98:in `with_mixin'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `block in with_base'
@@ -70,4 +71,4 @@ C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$sectionVerticalPadding\".\A         on line 3 of scss/custom_components/sections.scss\A \A 1: \A 2: .lb-section .fl-row-content-wrap{ \A 3: 	padding: $sectionVerticalPadding  20px !important;\A 4: \A 5: 	.fl-heading-text {\A 6: 		font-size: $sectionTitleFontSize !important;\A 7: 		color: $lightBgHeaderText !important;\A 8: 	}"; }
+  content: "Error: Undefined mixin 'addButtonStyle'.\A         on line 4 of scss/custom_components/powerpack/dual-button.scss, in `addButtonStyle'\A         from line 4 of scss/custom_components/powerpack/dual-button.scss\A \A 1: /***********Custom styles for dual buttons ******************/\A 2: // styling for first button in dual button\A 3: .lb-dual-btn-1 .pp-dual-button-1 .pp-button{\A 4: 	 @include addButtonStyle($accentColor, $accentText)\A 5: }\A 6: \A 7: .lb-dual-btn-1 {\A 8: 	.pp-dual-button-1 .pp-button{\A 9: 		 @include addButtonStyle($accentColor, $accentText);"; }

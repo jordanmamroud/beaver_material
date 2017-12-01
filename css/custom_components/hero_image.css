@@ -1,20 +1,20 @@
 /*
-Error: Undefined variable: "$largeText".
-        on line 5 of scss/custom_components/powerpack-modules.scss
+Error: Undefined variable: "$heroImagePaddingMobile".
+        on line 5 of scss/custom_components/hero_image.scss
 
 1: 
-2: /* powerpack element styling *\/
-3: 
-4: .pp-infobox-title {
-5: 	font-size:$largeText !important; 
-6: }
-7: 
-8: .pp-infobox-description{ 	font-size: $smallText !important;}
-9: 
-10: .pp-button-wrap {
+2: /* hero image is for images at top of pages *\/
+3: @media only screen and (max-width: 500px) {
+4: 	.lb-hero-image .fl-row-content-wrap{
+5: 		 padding: $heroImagePaddingMobile 0px !important;
+6: 	}
+7: 	.lb-hero-image h1{
+8: 		font-size: $h3-fontsize !important;
+9: 	}
+10: }
 
 Backtrace:
-scss/custom_components/powerpack-modules.scss:5
+scss/custom_components/hero_image.scss:5
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/script/tree/list_literal.rb:75:in `block in _perform'
@@ -33,6 +33,20 @@ C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:528:in `visit_media'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `block in with_base'
@@ -72,4 +86,4 @@ C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$largeText\".\A         on line 5 of scss/custom_components/powerpack-modules.scss\A \A 1: \A 2: /* powerpack element styling */\A 3: \A 4: .pp-infobox-title {\A 5: 	font-size:$largeText !important; \A 6: }\A 7: \A 8: .pp-infobox-description{ 	font-size: $smallText !important;}\A 9: \A 10: .pp-button-wrap {"; }
+  content: "Error: Undefined variable: \"$heroImagePaddingMobile\".\A         on line 5 of scss/custom_components/hero_image.scss\A \A 1: \A 2: /* hero image is for images at top of pages */\A 3: @media only screen and (max-width: 500px) {\A 4: 	.lb-hero-image .fl-row-content-wrap{\A 5: 		 padding: $heroImagePaddingMobile 0px !important;\A 6: 	}\A 7: 	.lb-hero-image h1{\A 8: 		font-size: $h3-fontsize !important;\A 9: 	}\A 10: }"; }

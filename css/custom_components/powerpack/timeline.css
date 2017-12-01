@@ -1,25 +1,39 @@
 /*
-Error: Undefined variable: "$sectionVerticalPadding".
-        on line 3 of scss/custom_components/sections.scss
+Error: Undefined mixin 'addMaterial'.
+        on line 7 of scss/custom_components/powerpack/timeline.scss, in `addMaterial'
+        from line 7 of scss/custom_components/powerpack/timeline.scss
 
-1: 
-2: .lb-section .fl-row-content-wrap{ 
-3: 	padding: $sectionVerticalPadding  20px !important;
-4: 
-5: 	.fl-heading-text {
-6: 		font-size: $sectionTitleFontSize !important;
-7: 		color: $lightBgHeaderText !important;
-8: 	}
+2: 
+3: .lb-timeline-1{
+4:     text-align: center;
+5: 
+6:     .pp-timeline-content{
+7:           @include addMaterial() ;
+8:     }
+9: 
+10:     .pp-timeline-title-wrapper{      
+11:             background: $timelineTitleBg !important;
+12:             color: $timelineTitleText !important;
 
 Backtrace:
-scss/custom_components/sections.scss:3
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/script/tree/variable.rb:49:in `_perform'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/script/tree/node.rb:50:in `perform'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/script/tree/list_literal.rb:75:in `block in _perform'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/script/tree/list_literal.rb:75:in `map'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/script/tree/list_literal.rb:75:in `_perform'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/script/tree/node.rb:50:in `perform'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
+scss/custom_components/powerpack/timeline.scss:7:in `addMaterial'
+scss/custom_components/powerpack/timeline.scss:7
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:98:in `block in with_mixin'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:98:in `with_mixin'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:444:in `map'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `block in with_base'
@@ -70,4 +84,4 @@ C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$sectionVerticalPadding\".\A         on line 3 of scss/custom_components/sections.scss\A \A 1: \A 2: .lb-section .fl-row-content-wrap{ \A 3: 	padding: $sectionVerticalPadding  20px !important;\A 4: \A 5: 	.fl-heading-text {\A 6: 		font-size: $sectionTitleFontSize !important;\A 7: 		color: $lightBgHeaderText !important;\A 8: 	}"; }
+  content: "Error: Undefined mixin 'addMaterial'.\A         on line 7 of scss/custom_components/powerpack/timeline.scss, in `addMaterial'\A         from line 7 of scss/custom_components/powerpack/timeline.scss\A \A 2: \A 3: .lb-timeline-1{\A 4:     text-align: center;\A 5: \A 6:     .pp-timeline-content{\A 7:           @include addMaterial() ;\A 8:     }\A 9: \A 10:     .pp-timeline-title-wrapper{      \A 11:             background: $timelineTitleBg !important;\A 12:             color: $timelineTitleText !important;"; }

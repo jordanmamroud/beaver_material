@@ -1,0 +1,19 @@
+
+/* hero image is for images at top of pages */
+@media only screen and (max-width: 500px) {
+	.lb-hero-image .fl-row-content-wrap{
+		 padding: $heroImagePaddingMobile 0px !important;
+	}
+	.lb-hero-image h1{
+		font-size: $h3-fontsize !important;
+	}
+}
+
+@media only screen and (min-width: 500px) {
+	.lb-hero-image .fl-row-content-wrap{
+		 padding: $heroImagePadding 0px !important;
+	}
+	.lb-hero-image h1{
+		font-size: $h1-fontsize!important;
+	}
+}

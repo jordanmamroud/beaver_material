@@ -1,0 +1,12 @@
+/*styling for advanced accordion */
+.fl-accordion-item:hover {
+		background-color: $accentColor !important;
+		color:#fff;
+}
+
+.fl-accordion .fl-accordion-item-active {
+		background-color: $accentColor;
+		color:#fff;
+}
+
+.fl-accordion .fl-accordion-item-active {	font-size:16px; }

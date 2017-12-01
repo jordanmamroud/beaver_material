@@ -43,24 +43,31 @@ $accentText: #fff;
 $tertiaryColor: #aaa;
 $tertiaryText: #000; 
 
+$defaultTextColor:#808080;
+
 $transparentColor: rgba(0, 0, 0, 0) ;
+
 
 $primary-color: color("materialize-red", "lighten-2") !default;
 $primary-color-light: lighten($primary-color, 15%) !default;
 $primary-color-dark: darken($primary-color, 15%) !default;
 
-$secondary-color: color("teal", "lighten-1") !default;
+$secondary-color: $accentColor;
 $success-color: color("green", "base") !default;
 $error-color: color("red", "base") !default;
 $link-color: color("light-blue", "darken-1") !default;
 
+$off-black: rgba(0, 0, 0, 0.87) !default;
+
 
 // Typography
 // ==========================================================================
+$smallText: 16px; 
+$mediumText: 24px ;
+$largeText: 26px ;
+$defaultFontSize: 20px; 
 
-$off-black: rgba(0, 0, 0, 0.87) !default;
 
-// Header Styles
 $h1-fontsize: 3rem !default;
 $h2-fontsize: 2.5em !default;
 $h3-fontsize: 2rem !default;
@@ -68,20 +75,20 @@ $h4-fontsize: 1.5rem !default;
 $h5-fontsize: 1.25rem !default;
 $h6-fontsize: 1rem !default;
 
+
+// Hero Image
+//==============================================================================
 $pageTitleColor: #fff; 
 $pageTitleFontSize: 36px; 
 $sectionTitleColor: #0a2972;
+$heroImagePadding: 160px; 
+$heroImagePaddingMobile: 30px;
+
+
+// Sections && container
+// =============================================================================
 $sectionTitleFontSize: $h3-fontsize ;
-
-$smallText: 16px; 
-$mediumText: 24px ;
-$largeText: 26px ;
-$borderRadius:4px ;
-
-
-// Styling 
-//===========================================================================
-$borderRadius:4px ;
+$sectionVerticalPadding: 40px;
 
 $lightBgHeaderText: $off-black;
 $lightBgBodyText: #aaa; 
@@ -90,20 +97,30 @@ $darkBg: #0d3542;
 $darkBgHeaderText: #fff;
 $darkBgBodyText: #fff;
  
-$defaultFontSize: 20px; 
 $defaultBgColor: #f9f9f9;
-$defaultTextColor:#808080;
-$defaultFontFamily:  Helvetica, Verdana, Arial, sans-serif;
 
+// Styling 
+//===========================================================================
+$borderRadius:4px ;
 $separatorWidth: 80%;
+
+
 // 2. Header 
 // ==========================================================================
-
 $headerActive: #aaa;
 $headerInactive:#000;
 $headerHover: #ca4a82;
 $headerBg:rgba(242,242,242, 1);
 $lightBg: #f6f8fb;
+
+// Timeline   
+//===========================================================================
+
+$timelineTitleBg: $accentColor ;
+$timelineTitleText: $accentText ;
+$timelineIconSize: 40px ;
+$timelineInfoBg: $lightBg ;
+
 
 
 // 2. Badges

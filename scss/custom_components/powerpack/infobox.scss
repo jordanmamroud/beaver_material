@@ -1,0 +1,24 @@
+
+
+.pp-infobox-title {
+	font-size:$largeText !important; 
+}
+
+.pp-infobox-description{ 	font-size: $smallText !important;}
+
+.pp-button-wrap {
+	margin-top:20px;
+	margin-bottom:15px;
+}
+.pp-button-wrap a{
+	border-radius:4px 4px 4px 4px !important;	
+	font-size: 18px !important;
+}
+
+
+.lb-infobox-1 .pp-infobox-title{
+		font-size: 30px !important;
+		border-bottom: 2px solid $accentColor;
+		padding:10px 60px;
+		display:inline-block;
+}

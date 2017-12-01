@@ -20,3 +20,16 @@
 .lb-vertical-col-space .fl-col-group{
 	margin-top: 10px !important; 
 }
+
+span a , p a{
+	color: $accentColor !important;
+}
+
+.fl-widget li strong{
+	color: $off-black;
+	font-size: $h4-fontsize;
+}
+ 
+.fl-widget div a {
+	color: $accentColor !important;
+}

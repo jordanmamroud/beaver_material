@@ -1,18 +1,18 @@
 /*
-Error: Undefined variable: "$sectionVerticalPadding".
-        on line 3 of scss/custom_components/sections.scss
+Error: Undefined variable: "$accentColor".
+        on line 3 of scss/custom_components/powerpack/accordion.scss
 
-1: 
-2: .lb-section .fl-row-content-wrap{ 
-3: 	padding: $sectionVerticalPadding  20px !important;
-4: 
-5: 	.fl-heading-text {
-6: 		font-size: $sectionTitleFontSize !important;
-7: 		color: $lightBgHeaderText !important;
-8: 	}
+1: /*styling for advanced accordion *\/
+2: .fl-accordion-item:hover {
+3: 		background-color: $accentColor !important;
+4: 		color:#fff;
+5: }
+6: 
+7: .fl-accordion .fl-accordion-item-active {
+8: 		background-color: $accentColor;
 
 Backtrace:
-scss/custom_components/sections.scss:3
+scss/custom_components/powerpack/accordion.scss:3
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/script/tree/list_literal.rb:75:in `block in _perform'
@@ -70,4 +70,4 @@ C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$sectionVerticalPadding\".\A         on line 3 of scss/custom_components/sections.scss\A \A 1: \A 2: .lb-section .fl-row-content-wrap{ \A 3: 	padding: $sectionVerticalPadding  20px !important;\A 4: \A 5: 	.fl-heading-text {\A 6: 		font-size: $sectionTitleFontSize !important;\A 7: 		color: $lightBgHeaderText !important;\A 8: 	}"; }
+  content: "Error: Undefined variable: \"$accentColor\".\A         on line 3 of scss/custom_components/powerpack/accordion.scss\A \A 1: /*styling for advanced accordion */\A 2: .fl-accordion-item:hover {\A 3: 		background-color: $accentColor !important;\A 4: 		color:#fff;\A 5: }\A 6: \A 7: .fl-accordion .fl-accordion-item-active {\A 8: 		background-color: $accentColor;"; }

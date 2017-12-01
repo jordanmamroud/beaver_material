@@ -1,18 +1,21 @@
 /*
-Error: Undefined variable: "$sectionVerticalPadding".
-        on line 3 of scss/custom_components/sections.scss
+Error: Undefined variable: "$accentColor".
+        on line 7 of scss/custom_components/Forms/input-fields.scss
 
-1: 
-2: .lb-section .fl-row-content-wrap{ 
-3: 	padding: $sectionVerticalPadding  20px !important;
-4: 
-5: 	.fl-heading-text {
-6: 		font-size: $sectionTitleFontSize !important;
-7: 		color: $lightBgHeaderText !important;
-8: 	}
+2: 
+3: 
+4:   .lb-form-2{
+5: 
+6:     .fl-module-content:first-child{
+7:         border-top: 2px solid $accentColor !important;  
+8:     }
+9: 
+10:                 
+11:       input:not([type]),
+12:       input[type=text]:not(.browser-default),
 
 Backtrace:
-scss/custom_components/sections.scss:3
+scss/custom_components/Forms/input-fields.scss:7
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/script/tree/list_literal.rb:75:in `block in _perform'
@@ -20,6 +23,17 @@ C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/script/tree/list_lite
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/script/tree/list_literal.rb:75:in `_perform'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:444:in `map'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `block in with_base'
@@ -70,4 +84,4 @@ C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$sectionVerticalPadding\".\A         on line 3 of scss/custom_components/sections.scss\A \A 1: \A 2: .lb-section .fl-row-content-wrap{ \A 3: 	padding: $sectionVerticalPadding  20px !important;\A 4: \A 5: 	.fl-heading-text {\A 6: 		font-size: $sectionTitleFontSize !important;\A 7: 		color: $lightBgHeaderText !important;\A 8: 	}"; }
+  content: "Error: Undefined variable: \"$accentColor\".\A         on line 7 of scss/custom_components/Forms/input-fields.scss\A \A 2: \A 3: \A 4:   .lb-form-2{\A 5: \A 6:     .fl-module-content:first-child{\A 7:         border-top: 2px solid $accentColor !important;  \A 8:     }\A 9: \A 10:                 \A 11:       input:not([type]),\A 12:       input[type=text]:not(.browser-default),"; }
