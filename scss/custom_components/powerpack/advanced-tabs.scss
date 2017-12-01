@@ -1,0 +1,17 @@
+
+/*styling for advanced tabs */
+ .pp-tab-active .pp-tab-label-inner:after {
+	background:$accentColor !important;
+}
+
+.pp-tab-active .pp-tab-label-inner span{
+		color: #fff !important;
+}
+.pp-tab-label-inner span{
+	font-size:18px;
+}
+.pp-tabs-panel-content p{
+	font-size: 16px;
+}
+
+
