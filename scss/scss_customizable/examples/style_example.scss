@@ -8,31 +8,31 @@
 
 // attention above read before use **********************************-------------------- 
 // Reset
-@import "../components/normalize";
+// @import "../components/normalize";
 
-// components from materialize all unedited except for variables since everything is dependent on it it is up top
-@import "../components/color";
-@import "variables_in_use";
+// // components from materialize all unedited except for variables since everything is dependent on it it is up top
+// @import "../components/color";
+// @import "variables_in_use";
 
-@import "../components/global";
-@import "../components/typography";
+// @import "../components/global";
+// @import "../components/typography";
 
-// custom component imports
-@import "../custom_components/header";
-@import "../custom_components/material";
-@import "../custom_components/materialize/buttons";
-@import "../custom_components/sections";
-@import "../custom_components/defaults";
-@import "../custom_components/hero_image";
+// // custom component imports
+// @import "../custom_components/header";
+// @import "../custom_components/material";
+// @import "../custom_components/materialize/buttons";
+// @import "../custom_components/sections";
+// @import "../custom_components/defaults";
+// @import "../custom_components/hero_image";
 
-//imports for forms 
-@import "../custom_components/forms/input-fields";
+// //imports for forms 
+// @import "../custom_components/forms/input-fields";
 
-// imports for powerpack
-@import "../custom_components/powerpack/defaults" ;
-@import "../custom_components/powerpack/dual-button" ;
-@import "../custom_components/powerpack/infobox";
-@import "../custom_components/powerpack/timeline";
+// // imports for powerpack
+// @import "../custom_components/powerpack/defaults" ;
+// @import "../custom_components/powerpack/dual-button" ;
+// @import "../custom_components/powerpack/infobox";
+// @import "../custom_components/powerpack/timeline";
  
 /*	******************************* Custom site code ************************************* */
 
