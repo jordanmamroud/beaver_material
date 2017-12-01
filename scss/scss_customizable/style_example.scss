@@ -1,12 +1,18 @@
 @charset "UTF-8";
 
+// when using this you must create a variables_in_use.scss and style.scss file
+// in the scss_customizable directory
 
+
+
+
+// attention above read before use **********************************-------------------- 
 // Reset
 @import "../components/normalize";
 
 // components from materialize all unedited except for variables since everything is dependent on it it is up top
 @import "../components/color";
-@import "variables";
+@import "variables_in_use";
 
 @import "../components/global";
 @import "../components/typography";
