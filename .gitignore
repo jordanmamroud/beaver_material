@@ -1,1 +1,2 @@
-dir_to_ignore/scss/scss_customizable/style.scss
+# Ignore configuration files that may contain sensitive information.
+scss/scss_customizable/styles.scss
