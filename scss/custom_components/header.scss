@@ -1,0 +1,8 @@
+
+/* header styling */
+.fl-page-header {background-color: $headerBg; }
+.fl-page-nav-wrap .navbar-nav > li.current-menu-item > a { color: $headerActive !important;}
+.fl-page-nav-wrap .navbar-nav a{color: $headerInactive !important;}
+.fl-page-nav-wrap .navbar-nav a:hover{ color: $headerHover !important; }
+.sub-menu{ border-top:3px solid  $headerHover !important;}
+.sub-menu li:hover{  background-color: $lightBg !important; }

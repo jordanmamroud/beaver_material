@@ -1,0 +1,96 @@
+
+
+// Raised Button
+.lb-btn  .fl-button, .lb-btn .pp-button {
+  text-decoration: none;
+  text-align: center;
+  border-radius: $borderRadius !important;
+  letter-spacing: .5px;
+  @extend .z-depth-2;
+  transition: .2s ease-out;
+  cursor: pointer;
+
+  &:hover {
+    @extend .hoverable;
+  }
+}
+
+/************ mixin for different colored buttons ********************/
+@mixin addButtonStyle( $background, $textColor   ){
+  border: none !important;
+  background-color:  $background !important; 
+  color: $textColor !important; 
+  
+  &:hover {
+    background-color: lighten($background , 10%) !important; 
+  }
+  & span,i  {
+    color: $textColor !important ;
+  }
+}
+
+.lb-btn-primary .fl-button, .lb-btn-accent .pp-button{
+   @include addButtonStyle( $primaryColor, $primaryText );
+}
+
+.lb-btn-accent .fl-button, .lb-btn-accent .pp-button {
+    @include addButtonStyle( $accentColor, $accentText );
+}
+
+.lb-holo-btn .fl-button, .lb-holo-btn .pp-button {
+    border: 1px solid $accentColor !important;
+    color: $accentColor !important; 
+    background-color: $transparentColor !important;
+    &:hover {
+      background-color: lighten($accentColor, 42%) !important; 
+      color: $accentColor !important; 
+    }
+    & span, i {color: $accentColor !important; }
+}
+
+/***********Custom styles for dual buttons ******************/
+// styling for first button in dual button
+.lb-dual-btn-1 .pp-dual-button-1 .pp-button{
+	@extend .lb-btn; 
+	
+}
+
+// // Flat button
+// .btn-flat {
+//   box-shadow: none;
+//   background-color: transparent;
+//   color: $button-flat-color;
+//   cursor: pointer;
+//   transition: background-color .2s;
+
+//   &:focus,
+//   &:hover {
+//     box-shadow: none;
+//   }
+
+//   &:focus {
+//     background-color: rgba(0,0,0,.1);
+//   }
+
+//   &.disabled {
+//     background-color: transparent !important;
+//     color: $button-flat-disabled-color !important;
+//     cursor: default;
+//   }
+// }
+
+// // Large button
+// .btn-large {
+//   @extend .btn;
+//   height: $button-large-height;
+//   line-height: $button-large-height;
+
+//   i {
+//     font-size: $button-large-icon-font-size;
+//   }
+// }
+
+// // Block button
+// .btn-block {
+//   display: block;
+// }

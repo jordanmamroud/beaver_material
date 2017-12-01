@@ -1,0 +1,17 @@
+/* custom hover effects */
+.lb-holo-hover:hover , .lb-holo-hover a:hover {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.zoomOnScroll img:hover{
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+// nned to turn to mixin for hover over effect slow bg change.
+		// -moz-transition: background-color 300ms ease-out;
+		// 	-webkit-transition: background-color 300ms ease-in-out;
+		// 	-ms-transition: background-color 300ms ease-in-out;
+    // 	transition: background-color 300ms ease-in-out;
+    
+    
