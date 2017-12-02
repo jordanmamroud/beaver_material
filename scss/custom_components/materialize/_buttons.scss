@@ -37,7 +37,7 @@
     @include addButtonStyle( $accentColor, $accentText );
 }
 
-.lb-holo-btn .fl-button, .lb-holo-btn .pp-button {
+.lb-btn-holo .fl-button, .lb-holo-btn .pp-button {
     border: 1px solid $accentColor !important;
     color: $accentColor !important; 
     background-color: $transparentColor !important;
@@ -52,7 +52,6 @@
 // styling for first button in dual button
 .lb-dual-btn-1 .pp-dual-button-1 .pp-button{
 	@extend .lb-btn; 
-	
 }
 
 // // Flat button
