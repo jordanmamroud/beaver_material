@@ -1,0 +1,44 @@
+
+
+@mixin calloutStyle1($heading-bg-color, $text-color){
+     .fl-module-content{
+        margin: 0px 0px !important; 
+     }
+}
+
+@mixin addHeadingBg ($heading-bg-color, $text-color){
+        .fl-callout-title{
+            padding: 20px 20px 10px 20px !important ;
+            background-color: $heading-bg-color ; 
+            span, span a{
+                color: $text-color ;
+            }
+        }
+
+        .fl-callout-text{
+            margin: 10px 30px ;
+        }
+
+        .fl-callout-button{
+            margin: 5px 30px 30px 30px ;
+        }
+}
+
+.lb-callout-highlight-light{
+    @include addHeadingBg($light-bg ,$light-bg-header-text )
+}
+
+.lb-callout-highlight-dark{
+    @include addHeadingBg($dark-bg ,$dark-bg-header-text )
+}
+
+.lb-callout-highlight-accent{
+    @include addHeadingBg($accent-color, $accent-text);
+}
+
+.lb-callout-hightlight-primary{
+    @include addHeadingBg($primary-color, $primary-text);
+}
+.lb-no-hover .fl-callout-title span a {
+    pointer-events: none;
+}

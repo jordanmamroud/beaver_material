@@ -8,43 +8,43 @@
     }
 
     .pp-timeline-title-wrapper{      
-            background: $timelineTitleBg !important;
-            color: $timelineTitleText !important;
-            border-radius: $borderRadius $borderRadius 0px 0px;
+            background: $timeline-title-bg !important;
+            color: $timeline-title-text !important;
+            border-radius: $border-radius $border-radius 0px 0px;
      }
 
     .pp-timeline-text-wrapper{
-        background: $timelineInfoBg !important; 
-        border-radius: 0px 0px $borderRadius $borderRadius;
+        background: $timeline-info-bg !important; 
+        border-radius: 0px 0px $border-radius $border-radius;
     }
 
     .pp-timeline-icon {
         @extend .z-depth-1 ;
-        background: $timelineTitleBg !important ;
+        background: $timeline-title-bg !important ;
         border-color: transparent;
         border-style: none;
         border-radius: 100px !important;
         border-width: 0px;
-        color: $timelineTitleText !important;
+        color: $timeline-title-text !important;
         
             .pp-icon{
-                font-size: $timelineIconSize !important; 
+                font-size: $timeline-icon-size !important; 
             }
     }
 
     .pp-timeline-item:nth-of-type(1n) .pp-separator-arrow{
-        border-left-color: $accentColor !important;
+        border-left-color: $accent-color !important;
     }
 
         @media only screen and (max-width: 768px){
         .lb-timeline-1 .pp-separator-arrow {
-                border-right-color: $timelineInfoBg  !important;
+                border-right-color: $timeline-info-bg  !important;
                 border-left: none !important;
         }
     }
       @media only screen and (min-width: 768px){
            .pp-timeline-item:nth-of-type(2n) .pp-separator-arrow{
-             border-right-color: $accentColor  !important;
+             border-right-color: $accent-color  !important;
       }
 }
 }

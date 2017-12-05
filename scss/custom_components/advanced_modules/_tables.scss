@@ -1,0 +1,19 @@
+ 
+
+.lb-table-1{
+    
+    table{
+        border: 1px solid #c4c4c4;  
+    }
+   tr td:first-child {
+        background-color: $light-bg ;
+        padding: 10px;
+        border-right: 1px solid #c4c4c4;  
+        margin-right: 20px ; 
+        border-bottom: 1px solid #c4c4c4; 
+    }
+    td{
+         border-bottom: 1px solid #c4c4c4;  
+         font-size: $small-text; 
+    }
+}

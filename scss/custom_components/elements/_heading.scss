@@ -1,0 +1,27 @@
+
+
+// style page title===============================================================================
+.lb-page-title {
+	h1 , h2 , h3, h4{
+		color: $page-title-color !important ; 
+		font-size: $page-title-font-size !important ;
+	}
+}
+
+@mixin addTitleBackground($background, $textColor){
+	 h1,h2,h3,h4,h5 {
+		background-color:  $background ;   
+		color: $textColor ;
+
+		span, span a{
+			color: $textColor ;
+		}
+    }
+}
+
+.lb-heading-bg-light{ @include addTitleBackground($light-bg, $light-bg-header-text); }
+
+.lb-heading-bg-accent{ @include addTitleBackground($accent-color, $accent-text); }
+
+.lb-heading-bg-primary { @include addTitleBackground($primary-color, $primary-text )}
+

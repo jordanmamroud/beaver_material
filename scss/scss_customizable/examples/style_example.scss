@@ -7,32 +7,59 @@
 
 
 // attention above read before use **********************************-------------------- 
-// Reset
-// @import "../components/normalize";
 
-// // components from materialize all unedited except for variables since everything is dependent on it it is up top
+// //need to be imported first normalize is for reset variables is dependent on colors everything is dependent on variables
+// @import "../components/normalize";
 // @import "../components/color";
 // @import "variables_in_use";
-
 // @import "../components/typography";
 
-// // custom component imports
-// @import "../custom_components/global";
-// @import "../custom_components/header";
-// @import "../custom_components/material";
-// @import "../custom_components/materialize/buttons";
-// @import "../custom_components/sections";
-// @import "../custom_components/defaults";
-// @import "../custom_components/hero_image";
+
+// Order matters here do not mess with it . 
+
+// // Global 
+// //============================================================================================================
+//@import  "../custom_components/global/global";
+// @import "../custom_components/global/backgrounds";
+// @import "../custom_components/global/defaults";
+
+// @import "../custom_components/global/header";
+// @import "../custom_components/global/material";
+
+
+// //containers 
+// //============================================================================================================
+// @import "../custom_components/containers/modules";
+// @import "../custom_components/containers/sections";
+
+
+// //elements
+// //============================================================================================================
+// @import "../custom_components/elements/buttons";
+// @import  "../custom_components/elements/heading";
+// @import  "../custom_components/elements/images";
+// @import "../custom_components/elements/separators";
+
+
+// //Advanced Modules 
+// //============================================================================================================
+// @import "../custom_components/advanced_modules/callout";
+// @import "../custom_components/advanced_modules/tables";
+
+
+// //imports for advanced_modules/powerpack=====================================================================
+// @import "../custom_components/advanced_modules/powerpack/defaults" ;
+// @import "../custom_components/advanced_modules/powerpack/dual-button" ;
+// @import "../custom_components/advanced_modules/powerpack/infobox";
+// @import "../custom_components/advanced_modules/powerpack/timeline";
+
 
 // //imports for forms 
+// //============================================================================================================
 // @import "../custom_components/forms/input-fields";
 
-// // imports for powerpack
-// @import "../custom_components/powerpack/defaults" ;
-// @import "../custom_components/powerpack/dual-button" ;
-// @import "../custom_components/powerpack/infobox";
-// @import "../custom_components/powerpack/timeline";
+
+
  
 /*	******************************* Custom site code ************************************* */
 

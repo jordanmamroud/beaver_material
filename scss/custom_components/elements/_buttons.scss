@@ -4,7 +4,7 @@
 .lb-btn  .fl-button, .lb-btn .pp-button {
   text-decoration: none;
   text-align: center;
-  border-radius: $borderRadius !important;
+  border-radius: $border-radius !important;
   letter-spacing: .5px;
   @extend .z-depth-2;
   transition: .2s ease-out;
@@ -30,23 +30,53 @@
 }
 
 .lb-btn-primary .fl-button, .lb-btn-accent .pp-button{
-   @include addButtonStyle( $primaryColor, $primaryText );
+   @include addButtonStyle( $primary-color, $primary-text );
 }
 
 .lb-btn-accent .fl-button, .lb-btn-accent .pp-button {
-    @include addButtonStyle( $accentColor, $accentText );
+    @include addButtonStyle( $accent-color, $accent-text );
+}
+
+.lb-btn-light {
+    .fl-button, .lb-btn-accent .pp-button{
+      // using light bgheadertext temporarily just doing to match but if want more control 
+      //create separate variable.
+      @include addButtonStyle( $light-bg, $light-bg-header-text)
+    } 
 }
 
 .lb-btn-holo .fl-button, .lb-holo-btn .pp-button {
-    border: 1px solid $accentColor !important;
-    color: $accentColor !important; 
-    background-color: $transparentColor !important;
+    border: 1px solid $accent-color !important;
+    color: $accent-color !important; 
+    background-color: $transparent-color !important;
     &:hover {
-      background-color: lighten($accentColor, 42%) !important; 
-      color: $accentColor !important; 
+      background-color: lighten($accent-color, 42%) !important; 
+      color: $accent-color !important; 
     }
-    & span, i {color: $accentColor !important; }
+    & span, i {color: $accent-color !important; }
 }
+
+
+@mixin addButtonAlignment( $position){
+    @media only screen and (min-width: 500px) {
+        .fl-button-wrap {
+            text-align: $position !important ; 
+        }
+    }
+    @media only screen and (max-width: 500px) {
+       .fl-button-wrap{
+         text-align: center !important ; 
+    }
+  }
+}
+
+.lb-btn-right {
+    @include addButtonAlignment(right);
+}
+
+// .lb-btn-right .fl-button-wrap{
+//   text-align: right !important ; 
+// }
 
 /***********Custom styles for dual buttons ******************/
 // styling for first button in dual button

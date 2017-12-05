@@ -6,14 +6,8 @@
 }
 
 .fl-form-field input:active, .lb-accent textarea:active,.lb-accent input:focus ,.lb-accent textarea:focus {
-	 border-color: $accentColor !important;
+	 border-color: $accent-color !important;
 }
-
-.fl-callout-title-link:hover{
-	color: $accentColor !important;
-}
-
-
 // does not belong here.
 
 /*spaces columns vertically */ 
@@ -22,7 +16,10 @@
 }
 
 span a , p a{
-	color: $accentColor !important;
+	color: $link-color !important;
+	&:hover{
+		color: $link-hover !important; 
+	}
 }
 
 .fl-widget li strong{
@@ -31,5 +28,5 @@ span a , p a{
 }
  
 .fl-widget div a {
-	color: $accentColor !important;
+	color: $accent-color !important;
 }

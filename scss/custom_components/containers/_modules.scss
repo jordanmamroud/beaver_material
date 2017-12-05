@@ -1,0 +1,50 @@
+.lb-module-white{
+    .fl-module{
+        background-color: #fff !important; 
+    }
+}
+
+.lb-module-alternate-1{
+     .fl-module:nth-child(odd){
+            background-color: #fff !important; 
+     }
+    .fl-module:nth-child(even){
+            background-color: $light-bg !important; 
+     }       
+}
+
+.lb-module-no-space{
+    .fl-module-content{
+        margin: 0px 0px !important; 
+        padding: 0px 0px !important ;
+     }
+}
+
+.lb-module-light {  background-color: $light-bg !important;     }
+
+.lb-module-dark { background-color: $dark-bg !important; }
+
+.lb-module-accent{ background-color: $accent-color !important; }
+
+.lb-module-primary { background-color: $primary-color !important; }
+
+// used for elevating content module containers.
+.lb-elevate .fl-module-content:first-child {
+    @include addMaterial();
+}
+
+// targets each single child module ie if header and text editor were in column both would be targeted for elevation and separated. 
+.lb-module-elevate{
+     .fl-module{
+        @include addMaterial();
+        margin: 10px 10px !important;
+     }
+}
+
+//used for elevating columns not right place should make separate column file. 
+.lb-col-elevate .fl-col-content{
+    @include addMaterialInactive();
+}
+
+
+// need to add dark module and alternate 

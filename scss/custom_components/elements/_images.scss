@@ -1,0 +1,36 @@
+
+.lb-img {
+    .fl-photo-content img, .pp-photo-content {
+        @include addMaterial();
+        img{
+            border-radius: $border-radius ;
+        }
+    }
+}
+
+.lb-img-inactive  {
+    .fl-photo-content img, .pp-photo-content .pp-photo-img{
+        @include addMaterialInactive();
+    }
+}
+
+/* hero image is background images at top of pages */
+@media only screen and (max-width: 500px) {
+	.lb-hero-image .fl-row-content-wrap{
+		    padding: $hero-image-padding-mobile 0px !important;
+	}
+	.lb-hero-image {
+		h1,h2,h3,h4,h5{
+			font-size: $h3-fontsize !important;
+		}
+	}
+}
+
+@media only screen and (min-width: 500px) {
+	.lb-hero-image .fl-row-content-wrap{
+		 padding: $hero-image-padding 0px !important;
+	}
+	.lb-hero-image h1{
+		font-size: $h1-fontsize!important;
+	}
+}

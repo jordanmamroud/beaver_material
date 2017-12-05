@@ -1,10 +1,10 @@
 
 
 .pp-infobox-title {
-	font-size:$largeText !important; 
+	font-size:$large-text !important; 
 }
 
-.pp-infobox-description{ 	font-size: $smallText !important;}
+.pp-infobox-description{ 	font-size: $small-text !important;}
 
 .pp-button-wrap {
 	margin-top:20px;
@@ -33,21 +33,21 @@
 
 	.pp-infobox-title{
 			font-size: $h4-fontsize !important;
-			border-bottom: 2px solid $accentColor;
+			border-bottom: 2px solid $accent-color;
 			padding:10px 10px;
 			display:inline-block;
 	}
 		
 	.pp-infobox-description .pp-button-wrap{
-			background: $accentColor !important;
+			background: $accent-color !important;
 	}
 
 	.pp-infobox-description .pp-button-wrap a{
-		color: $primaryColor !important; 
+		color: $primary-color !important; 
 	}
 
 	.pp-infobox-description .pp-button-wrap a:hover{
-		color: $tertiaryColor !important;
+		color: $tertiary-color !important;
 	}
 }
 

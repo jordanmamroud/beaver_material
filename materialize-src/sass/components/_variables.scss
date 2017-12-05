@@ -34,16 +34,15 @@
 
 // 1. Colors
 // ==========================================================================
-$primaryColor:#0a2972 ;
-$primaryText: #fff; 
+$primary-text: #fff; 
 
-$accentColor: #ca4a82;
-$accentText: #fff; 
+$accent-color: #ca4a82;
+$accent-text: #fff; 
 
-$tertiaryColor: #aaa;
-$tertiaryText: #000; 
+$tertiary-color: #aaa;
+$tertiary-text: #000; 
 
-$transparentColor: rgba(0, 0, 0, 0) ;
+$transparent-color: rgba(0, 0, 0, 0) ;
 
 $primary-color: color("materialize-red", "lighten-2") !default;
 $primary-color-light: lighten($primary-color, 15%) !default;
@@ -57,11 +56,11 @@ $link-color: color("light-blue", "darken-1") !default;
 // 2. Header 
 // ==========================================================================
 
-$headerActive: #aaa;
-$headerInactive:#000;
-$headerHover: #ca4a82;
-$headerBg:rgba(242,242,242, 1);
-$lightBg: #f6f8fb;
+$header-active: #aaa;
+$header-inactive:#000;
+$header-hover: #ca4a82;
+$header-bg:rgba(242,242,242, 1);
+$light-bg: #f6f8fb;
 
 
 // 2. Badges
@@ -89,7 +88,7 @@ $button-disabled-color: #9F9F9F !default;
 
 // Raised buttons
 $button-raised-background: $secondary-color !default;
-$button-raised-background-hover: lighten($accentColor, 10%) !default;
+$button-raised-background-hover: lighten($accent-color, 10%) !default;
 $button-raised-color: #fff !default;
 
 // Large buttons

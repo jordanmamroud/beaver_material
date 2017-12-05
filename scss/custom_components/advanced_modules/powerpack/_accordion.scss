@@ -1,11 +1,11 @@
 /*styling for advanced accordion */
 .fl-accordion-item:hover {
-		background-color: $accentColor !important;
+		background-color: $accent-color !important;
 		color:#fff;
 }
 
 .fl-accordion .fl-accordion-item-active {
-		background-color: $accentColor;
+		background-color: $accent-color;
 		color:#fff;
 }
 

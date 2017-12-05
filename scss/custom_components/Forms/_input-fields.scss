@@ -2,7 +2,7 @@
 
 .lb-form-2 {
     .fl-module-content:first-child {
-        border-top: 2px solid $accentColor !important;
+        border-top: 2px solid $accent-color !important;
     }
 
     input:not([type]),
@@ -49,17 +49,17 @@
 .lb-form-3 {
 
     h1,h2,h3, h4 {
-        color: $formTitleColor ; 
+        color: $form-title-color ; 
         font-weight: bold;
         margin: 0 0 20px;
         padding-bottom: 10px;
-        border-bottom: 1px solid $formAccent ;
+        border-bottom: 1px solid $form-accent ;
     }
 
     .input-row label {
         margin: 0;
         font-weight: 400;
-        color: $formLabelColor ;
+        color: $form-label-color ;
     }
 
     .input-row label sup {
@@ -75,7 +75,7 @@
         }
 
         &:focus {
-          border: 1px solid $accentColor  !important;
+          border: 1px solid $accent-color  !important;
         }
     }
 
@@ -101,7 +101,5 @@
     }
    .input-row label.help {
       font-size: 11px;
-    }
-
-    
+    }    
 }

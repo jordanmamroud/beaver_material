@@ -1,0 +1,36 @@
+
+
+
+@mixin addMaterial{
+    @extend .z-depth-2;
+  transition: .2s ease-out;
+   border-radius: $border-radius;
+   
+  cursor: pointer;
+  &:hover {
+    @extend .hoverable;
+  }
+}
+
+@mixin addMaterialInactive(){
+     @extend .z-depth-2;
+  transition: .2s ease-out;
+  cursor: pointer;
+}
+
+// //used for elevating columns 
+// .lb-elevate-col .fl-col-content{
+//     @include addMaterialInactive();
+// }
+
+// used for elevating content module containers.
+.lb-elevate .fl-module-content:first-child {
+    @include addMaterial();
+}
+
+// .lb-elevate-module{
+//      .fl-module{
+//         @include addMaterial();
+//         margin: 10px 10px !important;
+//      }
+// }

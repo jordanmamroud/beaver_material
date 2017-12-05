@@ -1,12 +1,12 @@
 /***********Custom styles for dual buttons ******************/
 // styling for first button in dual button
 .lb-dual-btn-1 .pp-dual-button-1 .pp-button{
-	 @include addButtonStyle($accentColor, $accentText)
+	 @include addButtonStyle($accent-color, $accent-text)
 }
 
 .lb-dual-btn-1 {
 	.pp-dual-button-1 .pp-button{
-		 @include addButtonStyle($accentColor, $accentText);
+		 @include addButtonStyle($accent-color, $accent-text);
 
 		 &:hover{ 	
 			  @extend .hoverable ;
@@ -20,12 +20,12 @@
 	.pp-dual-button-2 .pp-button{
 		border: 1px solid #fff !important;
 		color: #fff !important; 
-		background-color: $transparentColor !important;
+		background-color: $transparent-color !important;
 		
 		&:hover {
 			@extend .hoverable; 
 			background-color: lighten(#fff , 10%) !important; 
-			 color: $accentColor !important; 
+			 color: $accent-color !important; 
 
 			 -moz-transition: background-color 300ms ease-out;
 			-webkit-transition: background-color 300ms ease-in-out;
@@ -33,7 +33,7 @@
 			transition: background-color 300ms ease-in-out;
 		}
 
-		&:hover span{	color: $accentColor !important; }
+		&:hover span{	color: $accent-color !important; }
 
 		& span, i {color: #fff !important; 	}
 	}

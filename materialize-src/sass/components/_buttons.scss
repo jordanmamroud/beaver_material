@@ -31,22 +31,22 @@
 }
 
 .lb-btn-primary .fl-button, .lb-btn-accent .pp-button{
-   @include addButtonStyle( $primaryColor, $primaryText );
+   @include addButtonStyle( $primary-color, $primary-text );
 }
 
 .lb-btn-accent .fl-button, .lb-btn-accent .pp-button {
-    @include addButtonStyle( $accentColor, $accentText );
+    @include addButtonStyle( $accent-color, $accent-text );
 }
 
 .lb-holo-btn .fl-button, .lb-holo-btn .pp-button {
-    border: 1px solid $accentColor !important;
-    color: $accentColor !important; 
-    background-color: $transparentColor !important;
+    border: 1px solid $accent-color !important;
+    color: $accent-color !important; 
+    background-color: $transparent-color !important;
     &:hover {
-      background-color: lighten($accentColor, 40%) !important; 
-      color: $accentColor !important; 
+      background-color: lighten($accent-color, 40%) !important; 
+      color: $accent-color !important; 
     }
-    & span, i {color: $accentColor !important; }
+    & span, i {color: $accent-color !important; }
 }
 
 

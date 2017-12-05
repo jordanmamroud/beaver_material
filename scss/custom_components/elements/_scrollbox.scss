@@ -1,0 +1,42 @@
+ 
+
+// scroll box is for overflow that are long engough to require scrolling 
+ 
+@mixin styleScrollbox($background, $listStyle){
+     overflow:auto;
+     padding:10px;
+     li{
+         list-style: $listStyle ;
+     }
+}
+
+@mixin styleScroller($track-background, $thumb-background){
+  &::-webkit-scrollbar-track
+    {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        border-radius: 10px;
+        background-color: $track-background;
+    }
+
+  &::-webkit-scrollbar
+    {
+        width: 12px;
+        background-color: $track-background;
+    }
+
+   &::-webkit-scrollbar-thumb
+    {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+        background-color: $thumb-background ;
+    }
+}
+.lb-scrollbox{
+     @include styleScrollbox($light-bg, none);
+ }
+
+
+
+.lb-scroller-primary {
+    @include styleScroller(#fff, $primary-color);
+}
