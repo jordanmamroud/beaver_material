@@ -2,11 +2,21 @@
 
 // style page title===============================================================================
 .lb-page-title {
-	h1 , h2 , h3, h4{
-		color: $page-title-color !important ; 
-		font-size: $page-title-font-size !important ;
+	h1 , h2 , h3, h4{	color: $page-title-color !important ; }
+}
+
+@media only screen and (max-width: 500px) {
+	.lb-page-title {
+		h1,h2,h3,h4,h5{	font-size: $page-title-font-size-mobile!important;}
 	}
 }
+
+@media only screen and (min-width: 500px) { 
+	.lb-page-title {
+        h1,h2,h3,h4,h5{ font-size: $page-title-font-size !important; }
+	}        
+}
+
 
 @mixin addTitleBackground($background, $textColor){
 	 h1,h2,h3,h4,h5 {
@@ -24,4 +34,17 @@
 .lb-heading-bg-accent{ @include addTitleBackground($accent-color, $accent-text); }
 
 .lb-heading-bg-primary { @include addTitleBackground($primary-color, $primary-text )}
+
+
+@mixin addBorderToHeading ($border-color){
+	 h1,h2,h3,h4,h5 {	
+		padding-bottom: 5px;
+		 border-bottom: 1px solid $border-color;  
+	 }
+}
+
+.lb-heading-border-light { @include addBorderToHeading($light) ; }
+.lb-heading-border-accent { @include addBorderToHeading($accent-color) ; }
+.lb-heading-border-primary{  @include addBorderToHeading($primary-color); 	}
+
 

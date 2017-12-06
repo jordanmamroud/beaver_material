@@ -28,7 +28,7 @@
 
 .lb-module-primary { background-color: $primary-color !important; }
 
-// used for elevating content module containers.
+// used for elevating content module containers most used thats why no type prefix.
 .lb-elevate .fl-module-content:first-child {
     @include addMaterial();
 }
@@ -46,5 +46,17 @@
     @include addMaterialInactive();
 }
 
+// adding margin on mobile so that the column has space on mobile otherwise it takes full width.
+@media #{$small-and-down}{
+    .lb-col-elevate .fl-col-content{
+        margin-left: 5px; 
+        margin-right: 5px ;
+    }
+}
+
 
 // need to add dark module and alternate 
+
+.lb-module-accent-top .fl-module-content:first-child {      border-top: 2px solid $accent-color !important; }
+
+.lb-module-primary-top .fl-module-content:first-child{      border-top: 2px solid $primary-color !important; }

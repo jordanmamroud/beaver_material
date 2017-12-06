@@ -1,27 +1,12 @@
-// Focused input style
+// Input bottom style-- input bottom means border on bottom of input fields only 
+//=========================================================================================================
 
-.lb-form-2 {
-    .fl-module-content:first-child {
-        border-top: 2px solid $accent-color !important;
-    }
-
-    input:not([type]),
-    input[type=text]:not(.browser-default),
-    input[type=password]:not(.browser-default),
-    input[type=email]:not(.browser-default),
-    input[type=url]:not(.browser-default),
-    input[type=time]:not(.browser-default),
-    input[type=date]:not(.browser-default),
-    input[type=datetime]:not(.browser-default),
-    input[type=datetime-local]:not(.browser-default),
-    input[type=tel]:not(.browser-default),
-    input[type=number]:not(.browser-default),
-    input[type=search]:not(.browser-default),
-    textarea {
-        // General Styles
+@mixin addInputBottomStyle(){
+  // using browser default makes it highlight correctly idk why
+    input:not(.browser-default) {
         background-color: transparent;
         border: none;
-        border-bottom: $input-border;
+        border-bottom: $input-border ;
         border-radius: 0;
         outline: none;
         height: $input-height;
@@ -29,77 +14,53 @@
         font-size: $input-font-size;
         margin: $input-margin;
         padding: $input-padding;
-        box-shadow: none;
-        box-sizing: content-box;
-        transition: $input-transition;
+    }
+}
 
-        // Focused input style
+@mixin addBottomBorderEffects($highlight-color){
+    input:not(.browser-default){
+       // Focused input style
         &:focus:not([readonly]) {
-            border-bottom: 1px solid $input-focus-color;
-            box-shadow: 0 1px 0 0 $input-focus-color;
+            border-bottom: 1px solid $highlight-color;
+            box-shadow: 0 1px 0 0 $highlight-color;
         }
 
-        // Focused label style
+        // Focused label style only works if label comes after the input field since that is what plus is for
         &:focus:not([readonly]) + label {
-            color: $input-focus-color;
+            color: $highlight-color;
         }
     }
 }
 
-.lb-form-3 {
+.lb-input-bottom {   @include addInputBottomStyle(); }
+.lb-input-bottom-accent{    @include  addBottomBorderEffects($accent-color); }
+.lb-input-bottom-primary {     @include addBottomBorderEffects($primary-color) ; }
 
-    h1,h2,h3, h4 {
-        color: $form-title-color ; 
-        font-weight: bold;
-        margin: 0 0 20px;
-        padding-bottom: 10px;
-        border-bottom: 1px solid $form-accent ;
-    }
+//input full styling -- input full means full border
+//=========================================================================================================
 
-    .input-row label {
-        margin: 0;
-        font-weight: 400;
-        color: $form-label-color ;
-    }
-
-    .input-row label sup {
-        color: red;
-    }
-
-    .input-row input {
+@mixin addInputFullStyle(){
+     input, select, textarea {
         margin-bottom: 5px;
         height: auto;
         padding: 5px 5px 3px;
+    }
+}
+
+@mixin addInputFullEffects( $highlight-color){
+     input, select, textarea {
         &:hover {
-          @extend .z-depth-1 ; 
+            @extend .z-depth-1 ; 
         }
 
         &:focus {
-          border: 1px solid $accent-color  !important;
+            border: 1px solid $highlight-color  !important;
         }
     }
-
-    .input-row input[type=text], #quote-request-holder .input-row input[type=tel],
-    .input-row input[type=email] {
-        color: #333;
-    }
-
-    .input-row select {
-        display: block;
-        width: 100%;
-        margin-top: 10px;
-        padding: 5px;
-        color: #333;
-    }
-
-    .input-row textarea {
-        color: #333;
-    }
-
-    .input-row label.help {
-        font-size: 11px;
-    }
-   .input-row label.help {
-      font-size: 11px;
-    }    
 }
+
+.lb-input-full{   @include addInputFullStyle();}
+.lb-input-full-accent {    @include addInputFullEffects($accent-color)}
+.lb-input-full-primary{   @include addInputFullEffects($primary-color) }
+
+

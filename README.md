@@ -36,3 +36,7 @@
 
 
 # If editing the files please follow these conventions  
+
+
+# bug tracking 
+# bug on ie 10 with dual button module style 1 where it glitches a little gray underneath when leaving hover of first button

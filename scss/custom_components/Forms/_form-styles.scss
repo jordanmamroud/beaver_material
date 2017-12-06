@@ -1,0 +1,77 @@
+
+
+// form sizes
+//==============================================================================================
+@mixin setFormSize($text-size, $height){
+    input {
+        font-size: $text-size !important;
+        margin: $input-margin !important;
+        padding: $input-padding !important;
+        height: $height;
+    }
+    
+    label {
+        margin: 0;
+        font-weight: 400;
+        color: $form-label-color ;
+        font-size: $text-size ; 
+    }
+    
+    button{
+        margin: $input-margin; 
+    }
+}
+
+
+
+.lb-form-small{ @include setFormSize( $label-small-text-size, $input-small-height  ); }
+.lb-form-medium{    @include setFormSize( $label-medium-text-size, $input-medium-height   ); }
+.lb-form-large{ @include setFormSize( $label-large-text-size, $input-large-height );}
+
+
+// overall form styles 
+//==============================================================================================
+.lb-form-3 {
+    label {
+        margin: 0;
+        font-weight: 400;
+        color: $form-label-color ;
+    }
+
+    input {
+        margin-bottom: 5px;
+        height: auto;
+        padding: 5px 5px 3px;
+        &:hover {
+          @extend .z-depth-1 ; 
+        }
+
+        &:focus {
+          border: 1px solid $accent-color  !important;
+        }
+    }
+
+    input[type=text], #quote-request-holder .input-row input[type=tel],
+    input[type=email] {
+        color: #333;
+    }
+
+     select {
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+        padding: 5px;
+        color: #333;
+    }
+
+     textarea {
+        color: #333;
+    }
+
+    .input-row label.help {
+        font-size: 11px;
+    }
+   .input-row label.help {
+      font-size: 11px;
+    }    
+}

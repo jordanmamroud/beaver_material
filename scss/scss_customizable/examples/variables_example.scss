@@ -1,4 +1,5 @@
-// ==========================================================================
+
+// ===========================================================================
 // Materialize variables
 // ==========================================================================
 //
@@ -31,7 +32,9 @@
 //  25. Progress Bar
 
 // 1. Colors
-// ==========================================================================
+// =======================================================================================
+
+$primary-color:#0a2972 ;
 $primary-text: #fff; 
 
 $accent-color: #ca4a82;
@@ -40,27 +43,34 @@ $accent-text: #fff;
 $tertiary-color: #aaa;
 $tertiary-text: #000; 
 
-$default-text-color:#808080;
 
+$default-text-color:#808080 ;
 $transparent-color: rgba(0, 0, 0, 0) ;
 
-$primary-color: #0a2972 ;
+$light: #f6f8fb;
+$dark: #0d3542;
+
 $primary-color-light: lighten($primary-color, 15%) !default;
 $primary-color-dark: darken($primary-color, 15%) !default;
 
 $secondary-color: $accent-color;
 $success-color: color("green", "base") !default;
 $error-color: color("red", "base") !default;
-$link-color: color("light-blue", "darken-1") !default;
 
+$white: #fff ; 
 $off-black: rgba(0, 0, 0, 0.87) !default;
 
 
+// Defaults 
+//===========================================================================
+$link-color: $primary-color ; 
+$link-hover: $accent-color ;
+
 // Typography
-// ==========================================================================
-$small-text: 16px; 
-$medium-text: 24px ;
-$large-text: 26px ;
+//===========================================================================
+$small-text: 1.0rem; 
+$medium-text: 1.20rem ;
+$large-text: 1.75rem ;
 $default-font-size: 20px; 
 
 
@@ -69,28 +79,29 @@ $h2-fontsize: 2.5em !default;
 $h3-fontsize: 2rem !default;
 $h4-fontsize: 1.5rem !default;
 $h5-fontsize: 1.25rem !default;
-$h6-fontsize: 1rem !default;
+$h6-fontsize: 1.0rem !default;
 
 
 // Hero Image
-//==============================================================================
+//===========================================================================
 $page-title-color: #fff; 
 $page-title-font-size: 36px; 
 $section-title-color: #0a2972;
-$hero-image-padding: 160px; 
+$hero-image-padding: 80px; 
 $hero-image-padding-mobile: 30px;
 
 
 // Sections && container
-// =============================================================================
+//===========================================================================
 $section-title-font-size: $h3-fontsize ;
 $section-vertical-padding: 40px;
 
-$light-bg-header-text: $off-black;
+$light-bg: $light ;
+$light-bg-header-text: $primary-color;
 $light-bg-body-text: #aaa; 
 
-$dark-bg: #0d3542;
-$dark-bg-beader-text: #fff;
+$dark-bg: $dark;
+$dark-bg-header-text: #fff;
 $dark-bg-body-text: #fff;
  
 $default-bg-color: #f9f9f9;
@@ -102,36 +113,35 @@ $separator-width: 80%;
 
 
 // 2. Header 
-// ==========================================================================
-$header-active: #aaa;
+//===========================================================================
+$header-active: $primary-color;
 $header-inactive:#000;
-$header-hover: #ca4a82;
+$header-hover: $accent-color;
 $header-bg:rgba(242,242,242, 1);
-$light-bg: #f6f8fb;
-
- 
 
 // Timeline   
 //===========================================================================
-
 $timeline-title-bg: $accent-color ;
 $timeline-title-text: $accent-text ;
 $timeline-icon-size: 40px ;
 $timeline-info-bg: $light-bg ;
 
 
+//Infobox
+//===========================================================================
+$infobox-title-text-size: $large-text ;
+$infobox-body-text-size: $medium-text ;
 
 
 
 // 2. Badges
-// ==========================================================================
-
+//===========================================================================
 $badge-bg-color: $secondary-color !default;
 $badge-height: 22px !default;
 
 
 // 3. Buttons
-// ==========================================================================
+//===========================================================================
 
 // Shared styles
 $button-border: none !default;
@@ -235,6 +245,22 @@ $roboto-font-path: "../fonts/roboto/" !default;
 
 // 11. Forms
 // =========================================================================
+$form-label-color: #aaa; 
+$form-title-color: $primary-color ;
+$form-accent: $primary-color ;
+
+// small form sizes 
+$label-small-text-size: $small-text ;
+$input-small-height: 40px ;
+ 
+// medium form sizes
+$label-medium-text-size: $medium-text ;
+$input-medium-height: 45px ;
+  
+// large form sizes
+$label-large-text-size: 1.5rem ;
+$input-large-height: 50px ;
+  
 
 // Text Inputs + Textarea
 $input-height: 3rem !default;
@@ -247,7 +273,7 @@ $input-focus-color: $secondary-color !default;
 $input-font-size: 1rem !default;
 $input-margin-bottom: 20px;
 $input-margin: 0 0 $input-margin-bottom 0 !default;
-$input-padding: 0 !default;
+$input-padding: 5px !default;
 $input-transition: all .3s !default;
 $label-font-size: .8rem !default;
 $input-disabled-color: rgba(0,0,0, .42) !default;

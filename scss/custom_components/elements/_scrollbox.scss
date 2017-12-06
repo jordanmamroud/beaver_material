@@ -31,12 +31,8 @@
         background-color: $thumb-background ;
     }
 }
-.lb-scrollbox{
-     @include styleScrollbox($light-bg, none);
- }
+.lb-scrollbox{   @include styleScrollbox($light-bg, none); }
 
-
-
-.lb-scroller-primary {
-    @include styleScroller(#fff, $primary-color);
-}
+.lb-scroller-primary {    @include styleScroller(#fff, $primary-color);     }
+.lb-scroller-accent{    @include styleScroller(#fff, $accent-color);   }
+.lb-scroller-light{@include styleScroller(#fff, $light);  }

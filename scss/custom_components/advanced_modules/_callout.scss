@@ -39,6 +39,7 @@
 .lb-callout-hightlight-primary{
     @include addHeadingBg($primary-color, $primary-text);
 }
+
 .lb-no-hover .fl-callout-title span a {
     pointer-events: none;
 }

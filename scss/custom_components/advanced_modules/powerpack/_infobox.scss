@@ -1,10 +1,10 @@
 
 
 .pp-infobox-title {
-	font-size:$large-text !important; 
+	font-size: $infobox-title-text-size !important; 
 }
 
-.pp-infobox-description{ 	font-size: $small-text !important;}
+.pp-infobox-description{ 	font-size: $infobox-body-text-size !important;}
 
 .pp-button-wrap {
 	margin-top:20px;

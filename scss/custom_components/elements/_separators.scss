@@ -18,14 +18,15 @@
 	background: radial-gradient(ellipse at 50% -50%,rgba(0,0,0,.5) 0,rgba(255,255,255,0) 65%);
 } 
 
-.lb-separator-accent {
+@mixin styleColoredSeparator($color){
     .fl-separator{
         border-top: 1px solid $accent-color  !important;  
     }
 }
 
-.lb-separator-primary{
-      .fl-separator{
-        border-top: 1px solid $primary-color !important; 
-    }
-}
+.lb-separator-accent { @include styleColoredSeparator($accent-color); }
+
+.lb-separator-primary{ @include styleColoredSeparator($primary-color); }
+
+.lb-separator-light {@include styleColoredSeparator($light); }
+.lb-separator-dark {@include styleColoredSeparator($dark); }
