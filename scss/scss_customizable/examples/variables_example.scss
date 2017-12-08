@@ -85,7 +85,9 @@ $h6-fontsize: 1.0rem !default;
 // Hero Image
 //===========================================================================
 $page-title-color: #fff; 
-$page-title-font-size: 36px; 
+$page-title-font-size: $h2-fontsize; 
+$page-title-font-size-mobile: $h3-fontsize; 
+
 $section-title-color: #0a2972;
 $hero-image-padding: 80px; 
 $hero-image-padding-mobile: 30px;
@@ -261,6 +263,13 @@ $input-medium-height: 45px ;
 $label-large-text-size: 1.5rem ;
 $input-large-height: 50px ;
   
+// inputmargin bottom controls distance between input and validation message.
+$validation-message-margin: 0px;
+
+// currently not controlling for forms since if marked as important on forms
+$input-margin-bottom: 30px;
+$input-margin: 0 0 $input-margin-bottom 0 !default;
+
 
 // Text Inputs + Textarea
 $input-height: 3rem !default;
@@ -271,8 +280,6 @@ $input-error-color: $error-color !default;
 $input-success-color: $success-color !default;
 $input-focus-color: $secondary-color !default;
 $input-font-size: 1rem !default;
-$input-margin-bottom: 20px;
-$input-margin: 0 0 $input-margin-bottom 0 !default;
 $input-padding: 5px !default;
 $input-transition: all .3s !default;
 $label-font-size: .8rem !default;
