@@ -3,11 +3,12 @@
 // form sizes
 //==============================================================================================
 @mixin setFormSize($text-size, $height){
+    //specific for powerpack and contact form 7 form  
     input {
         font-size: $text-size !important;
-        margin: $input-margin !important;
         padding: $input-padding !important;
         height: $height;
+        //not setting margin here since it will override distance for validation message. 
     }
     
     label {
@@ -19,7 +20,7 @@
     
     button{
         margin: $input-margin; 
-    }
+    }       
 }
 
 
@@ -75,3 +76,5 @@
       font-size: 11px;
     }    
 }
+
+

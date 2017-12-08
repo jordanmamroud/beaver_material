@@ -63,4 +63,13 @@
 .lb-input-full-accent {    @include addInputFullEffects($accent-color)}
 .lb-input-full-primary{   @include addInputFullEffects($primary-color) }
 
+// this is for the space between the validation message and the input it is validating.
+
+.wpcf7-not-valid{
+     margin-bottom: $validation-message-margin !important;
+
+}
+
+
+
 
