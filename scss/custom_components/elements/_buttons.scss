@@ -105,19 +105,19 @@
 
 .lb-btn-small{
     .fl-button, .pp-button,  .pp-more-link-button {
-        @include sizeButton(100px, 10px);
+        @include sizeButton($button-small-width, $button-small-padding);
     }
 }
 
 .lb-btn-medium{
     .fl-button, .pp-button,  .pp-more-link-button {
-        @include sizeButton(150px, 13px);
+        @include sizeButton($button-medium-width,  $button-medium-padding);
     }
 }
 
 .lb-btn-large {
     .fl-button, .pp-button,  .pp-more-link-button{
-        @include sizeButton(200px, 15px);
+        @include sizeButton($button-large-width,  $button-large-padding);
     }
 }
   
