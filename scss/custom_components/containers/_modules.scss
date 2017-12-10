@@ -3,7 +3,7 @@
         background-color: #fff !important; 
     }
 }
-
+// for alternating module color backgrounds. 
 .lb-module-alternate-1{
      .fl-module:nth-child(odd){
             background-color: #fff !important; 
@@ -41,22 +41,21 @@
      }
 }
 
+// need to add dark module and alternate 
+.lb-module-accent-top .fl-module-content:first-child {      border-top: 2px solid $accent-color !important; }
+
+.lb-module-primary-top .fl-module-content:first-child{      border-top: 2px solid $primary-color !important; }
+
 //used for elevating columns not right place should make separate column file. 
 .lb-col-elevate .fl-col-content{
     @include addMaterialInactive();
+ 
 }
 
 // adding margin on mobile so that the column has space on mobile otherwise it takes full width.
 @media #{$small-and-down}{
     .lb-col-elevate .fl-col-content{
-        margin-left: 5px; 
-        margin-right: 5px ;
+        margin-left: 5px !important; 
+        margin-right: 5px !important;
     }
 }
-
-
-// need to add dark module and alternate 
-
-.lb-module-accent-top .fl-module-content:first-child {      border-top: 2px solid $accent-color !important; }
-
-.lb-module-primary-top .fl-module-content:first-child{      border-top: 2px solid $primary-color !important; }

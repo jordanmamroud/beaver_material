@@ -1,18 +1,20 @@
 
 
 // Raised Button
-.lb-btn  .fl-button, .lb-btn .pp-button {
-  text-decoration: none;
-  text-align: center;
-  border-radius: $border-radius !important;
-  letter-spacing: .5px;
-  @extend .z-depth-2;
-  transition: .2s ease-out;
-  cursor: pointer;
+.lb-btn {
+    .fl-button , .pp-button ,  .pp-more-link-button{
+          text-decoration: none;
+          text-align: center;
+          border-radius: $border-radius !important;
+          letter-spacing: .5px;
+          @extend .z-depth-2;
+          transition: .2s ease-out;
+          cursor: pointer;
 
-  &:hover {
-    @extend .hoverable;
-  }
+          &:hover {
+            @extend .hoverable;
+          }
+    }
 }
 
 /************ mixin for different colored buttons ********************/
@@ -22,38 +24,60 @@
   color: $textColor !important; 
   
   &:hover {
-    background-color: lighten($background , 10%) !important; 
+        @include transition-bg-change( lighten($background , 10%) );
+  
   }
   & span,i  {
     color: $textColor !important ;
   }
 }
 
-.lb-btn-primary .fl-button, .lb-btn-accent .pp-button{
-   @include addButtonStyle( $primary-color, $primary-text );
+.lb-btn-primary {
+    .fl-button,   .pp-button,  .pp-more-link-button {
+            @include addButtonStyle( $primary-color, $primary-text );
+    }
 }
 
-.lb-btn-accent .fl-button, .lb-btn-accent .pp-button {
-    @include addButtonStyle( $accent-color, $accent-text );
+.lb-btn-accent {
+    .fl-button,   .pp-button,  .pp-more-link-button {
+        @include addButtonStyle( $accent-color, $accent-text );
+    }
 }
 
 .lb-btn-light {
-    .fl-button, .lb-btn-accent .pp-button{
+    .fl-button, .lb-btn-accent .pp-button, .pp-more-link-button {
       // using light bgheadertext temporarily just doing to match but if want more control 
       //create separate variable.
       @include addButtonStyle( $light-bg, $light-bg-header-text)
     } 
 }
 
-.lb-btn-holo .fl-button, .lb-holo-btn .pp-button {
-    border: 1px solid $accent-color !important;
-    color: $accent-color !important; 
+@mixin makeButtonHolo($border-color, $text-color, $hover-bg-color, $hover-text-color){
+    border: 1px solid $border-color !important;
+    color: $text-color !important; 
     background-color: $transparent-color !important;
+    
     &:hover {
-      background-color: lighten($accent-color, 42%) !important; 
-      color: $accent-color !important; 
+      @include transition-bg-change($hover-bg-color);
+      color: $hover-text-color !important; 
+        
+        span, i {
+            color: $hover-text-color !important; 
+        }
     }
-    & span, i {color: $accent-color !important; }
+    & span, i {color: $text-color !important; }
+}
+
+.lb-btn-holo-accent {
+    .fl-button , .pp-button, ,  .pp-more-link-button{
+        @include makeButtonHolo($accent-color, $accent-color,$accent-color,$accent-color)
+    }
+}
+
+.lb-btn-holo-white {
+    .fl-button , .pp-button,  .pp-more-link-button{
+        @include makeButtonHolo($white, $white, $white , $accent-color)
+    }
 }
 
 
@@ -70,20 +94,34 @@
   }
 }
 
-.lb-btn-right {
-    @include addButtonAlignment(right);
+ .lb-btn-right .fl-button-wrap{
+   text-align: right !important ; 
+ }
+
+@mixin sizeButton($btn-width, $padding){
+    width: $btn-width ;
+    padding: $padding 0px $padding 0px ;
 }
 
-// .lb-btn-right .fl-button-wrap{
-//   text-align: right !important ; 
-// }
-
-/***********Custom styles for dual buttons ******************/
-// styling for first button in dual button
-.lb-dual-btn-1 .pp-dual-button-1 .pp-button{
-	@extend .lb-btn; 
+.lb-btn-small{
+    .fl-button, .pp-button,  .pp-more-link-button {
+        @include sizeButton(100px, 10px);
+    }
 }
 
+.lb-btn-medium{
+    .fl-button, .pp-button,  .pp-more-link-button {
+        @include sizeButton(150px, 13px);
+    }
+}
+
+.lb-btn-large {
+    .fl-button, .pp-button,  .pp-more-link-button{
+        @include sizeButton(200px, 15px);
+    }
+}
+  
+ 
 // // Flat button
 // .btn-flat {
 //   box-shadow: none;

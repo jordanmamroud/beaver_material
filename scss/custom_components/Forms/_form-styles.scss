@@ -43,13 +43,6 @@
         margin-bottom: 5px;
         height: auto;
         padding: 5px 5px 3px;
-        &:hover {
-          @extend .z-depth-1 ; 
-        }
-
-        &:focus {
-          border: 1px solid $accent-color  !important;
-        }
     }
 
     input[type=text], #quote-request-holder .input-row input[type=tel],

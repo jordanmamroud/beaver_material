@@ -5,8 +5,8 @@
     height: 1px;
     overflow: visible;
     border: none;
-    width: $separator-width !important;
-}
+    border-top: none !important;
+ }
 
 .lb-separator-material .fl-separator:after {
 	display: block;

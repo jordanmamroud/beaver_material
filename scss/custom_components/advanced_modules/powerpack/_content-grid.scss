@@ -1,0 +1,25 @@
+
+
+@mixin contentGridModuleStyling(){
+     .pp-content-post {
+        @include addMaterial();
+     }
+     img{
+        height: $content-grid-img-height !important; 
+    }
+}
+// carousel and grid are two different options within the content grid module. 
+//reason for separating the two is since setting margin on grid version makes it not take all available columns.
+
+.lb-content-carousel {
+    @include contentGridModuleStyling();
+    // adding margin because content grid will cutoff edges of post without it and cant set in module. 
+    .pp-content-post {
+        margin: $content-grid-post-margin !important;
+    }
+    
+}
+
+.lb-content-grid{
+    @include contentGridModuleStyling();
+}

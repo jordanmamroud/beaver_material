@@ -17,3 +17,12 @@
          font-size: $small-text; 
     }
 }
+
+.lb-table-alternate tbody{
+    tr:nth-child(odd){
+            background-color: #fff !important; 
+     }
+    tr:nth-child(even){
+            background-color: $light-bg !important; 
+     }       
+}

@@ -1,6 +1,16 @@
+ 
+.lb-input{
+    input, select, textarea {
+        &:hover {
+             @extend .z-depth-1 ; 
+        }
+    }
+}
+
+
+
 // Input bottom style-- input bottom means border on bottom of input fields only 
 //=========================================================================================================
-
 @mixin addInputBottomStyle(){
   // using browser default makes it highlight correctly idk why
     input:not(.browser-default) {
@@ -37,29 +47,18 @@
 .lb-input-bottom-primary {     @include addBottomBorderEffects($primary-color) ; }
 
 //input full styling -- input full means full border
-//=========================================================================================================
+//========================================================================================================
 
-@mixin addInputFullStyle(){
-     input, select, textarea {
-        margin-bottom: 5px;
-        height: auto;
-        padding: 5px 5px 3px;
-    }
-}
+
 
 @mixin addInputFullEffects( $highlight-color){
      input, select, textarea {
-        &:hover {
-            @extend .z-depth-1 ; 
-        }
-
         &:focus {
             border: 1px solid $highlight-color  !important;
         }
     }
 }
 
-.lb-input-full{   @include addInputFullStyle();}
 .lb-input-full-accent {    @include addInputFullEffects($accent-color)}
 .lb-input-full-primary{   @include addInputFullEffects($primary-color) }
 
@@ -67,7 +66,6 @@
 
 .wpcf7-not-valid{
      margin-bottom: $validation-message-margin !important;
-
 }
 
 

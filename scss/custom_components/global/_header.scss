@@ -7,3 +7,16 @@
 .sub-menu{ border-top:3px solid  $header-hover !important;}
 .sub-menu li:hover{  background-color: $light-bg !important; }
 
+ 
+
+.fl-page-bar a {
+    margin-right: 10px !important;
+    color: $accent-color !important; 
+     font-size: 16px;
+       &:hover{
+        color: $primary-color ;
+        }
+    i{
+        color: $accent-color !important; 
+    }
+}

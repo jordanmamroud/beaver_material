@@ -1,0 +1,8 @@
+
+ @mixin transition-bg-change($bg-color){
+    -moz-transition: background-color 300ms ease-out;
+    -webkit-transition: background-color 300ms ease-in-out;
+    -ms-transition: background-color 300ms ease-in-out;
+    transition: background-color 300ms ease-in-out;
+     background-color: $bg-color !important ; 
+}

@@ -1,4 +1,5 @@
 
+
 // ===========================================================================
 // Materialize variables
 // ==========================================================================
@@ -34,21 +35,20 @@
 // 1. Colors
 // =======================================================================================
 
-$primary-color:#0a2972 ;
+$primary-color: #0a2972 ;
 $primary-text: #fff; 
 
-$accent-color: #ca4a82;
+$accent-color: #ddaa10;
 $accent-text: #fff; 
 
 $tertiary-color: #aaa;
 $tertiary-text: #000; 
 
-
 $default-text-color:#808080 ;
 $transparent-color: rgba(0, 0, 0, 0) ;
 
 $light: #f6f8fb;
-$dark: #0d3542;
+$dark: #203C7E;
 
 $primary-color-light: lighten($primary-color, 15%) !default;
 $primary-color-dark: darken($primary-color, 15%) !default;
@@ -59,7 +59,6 @@ $error-color: color("red", "base") !default;
 
 $white: #fff ; 
 $off-black: rgba(0, 0, 0, 0.87) !default;
-
 
 // Defaults 
 //===========================================================================
@@ -179,6 +178,11 @@ $button-floating-size: 40px !default;
 $button-floating-large-size: 56px !default;
 $button-floating-radius: 50% !default;
 
+// content-grid 
+//============================================================================
+$content-grid-img-height: 200px ;
+// bottom margin has extra cause hover material gets cut off on bottom without it.
+$content-grid-post-margin: 10px 10px 20px 10px ; 
 
 // 4. Cards
 // ==========================================================================
