@@ -1,4 +1,12 @@
 
+.lb-form .fl-module-content   {
+    .pp-contact-form{
+        border-radius: $border-radius !important;
+        &:hover{
+            @extend .hoverable ; 
+        }
+    }
+}
 
 // form sizes
 //==============================================================================================
@@ -7,7 +15,7 @@
     input {
         font-size: $text-size !important;
         padding: $input-padding !important;
-        height: $height;
+        height: $height !important;
         //not setting margin here since it will override distance for validation message. 
     }
     

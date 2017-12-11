@@ -63,14 +63,15 @@
         
         span, i {
             color: $hover-text-color !important; 
-        }
+        } 
     }
     & span, i {color: $text-color !important; }
 }
 
+ 
 .lb-btn-holo-accent {
     .fl-button , .pp-button, ,  .pp-more-link-button{
-        @include makeButtonHolo($accent-color, $accent-color,$accent-color,$accent-color)
+        @include makeButtonHolo($accent-color, $accent-color,$accent-color,$accent-text)
     }
 }
 

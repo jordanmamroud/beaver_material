@@ -1,6 +1,13 @@
  
+::placeholder {
+  color: #aaa !important;
+  font-size: 16px !important;
+}
+
 .lb-input{
     input, select, textarea {
+        border-radius: $border-radius !important ;
+
         &:hover {
              @extend .z-depth-1 ; 
         }
@@ -13,22 +20,22 @@
 //=========================================================================================================
 @mixin addInputBottomStyle(){
   // using browser default makes it highlight correctly idk why
-    input:not(.browser-default) {
+    input:not(.browser-default), textarea{
         background-color: transparent;
-        border: none;
-        border-bottom: $input-border ;
-        border-radius: 0;
+        border: none !important;
+        border-radius: 0px;
         outline: none;
-        height: $input-height;
         width: 100%;
-        font-size: $input-font-size;
-        margin: $input-margin;
-        padding: $input-padding;
+        transition: $input-transition;
+    }
+    input:not(:focus), textarea:not(:focus){
+        transition: $input-transition;
+        border-bottom: 1px solid #aaa !important;
     }
 }
 
 @mixin addBottomBorderEffects($highlight-color){
-    input:not(.browser-default){
+    input:not(.browser-default), textarea{
        // Focused input style
         &:focus:not([readonly]) {
             border-bottom: 1px solid $highlight-color;
