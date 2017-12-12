@@ -50,7 +50,7 @@ $default-text-color:#808080 ;
 $transparent-color: rgba(0, 0, 0, 0) ;
 
 $light: #f6f8fb;
-$dark: #3c3636;
+$dark: #0d3542;
 
 $primary-color-light: lighten($primary-color, 15%) !default;
 $primary-color-dark: darken($primary-color, 15%) !default;
@@ -95,6 +95,15 @@ $hero-image-padding: 80px;
 $hero-image-padding-mobile: 30px;
 
 
+// 2. Header 
+//===========================================================================
+$header-active: $primary-color;
+$header-inactive:#000;
+$header-hover: $accent-color;
+$header-bg:rgba(242,242,242, 1);
+$logo-height: auto ; 
+
+
 // Sections && container
 //===========================================================================
 $section-title-font-size: $h3-fontsize ;
@@ -116,17 +125,10 @@ $border-radius:4px ;
 $separator-width: 80%;
 
 
-// 2. Header 
-//===========================================================================
-$header-active: $primary-color;
-$header-inactive:#000;
-$header-hover: $accent-color;
-$header-bg:rgba(242,242,242, 1);
-
 // Footer
 // ==========================================================================
 
-$footer-font-color: #fff !default;
+$footer-font-color: #000 !default;
 $footer-bg-color: $primary-color !default;
 $footer-font-size: 16px; 
 $footer-item-margin: 10px ;
