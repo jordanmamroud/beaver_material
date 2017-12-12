@@ -84,6 +84,14 @@ $h5-fontsize: 1.25rem !default;
 $h6-fontsize: 1.0rem !default;
 
 
+// 2. Header 
+//===========================================================================
+$header-active: $primary-color;
+$header-inactive:#000;
+$header-hover: $accent-color;
+$header-bg:rgba(242,242,242, 1);
+$logo-height: auto ; 
+
 // Hero Image
 //===========================================================================
 $page-title-color: #fff; 
@@ -93,15 +101,6 @@ $page-title-font-size-mobile: $h3-fontsize;
 $section-title-color: #0a2972;
 $hero-image-padding: 80px; 
 $hero-image-padding-mobile: 30px;
-
-
-// 2. Header 
-//===========================================================================
-$header-active: $primary-color;
-$header-inactive:#000;
-$header-hover: $accent-color;
-$header-bg:rgba(242,242,242, 1);
-$logo-height: auto ; 
 
 
 // Sections && container
