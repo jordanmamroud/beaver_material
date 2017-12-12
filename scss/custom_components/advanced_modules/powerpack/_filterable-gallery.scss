@@ -1,0 +1,35 @@
+.lb-filterable-gallery{
+    .pp-gallery-filters li {
+        border-radius:  $border-radius !important;
+        @include addMaterial();
+        &:hover{ 
+            @extend .hoverable ; 
+        }
+    }
+    .pp-gallery-grid-item  {
+        @include addMaterial();
+//         @extend .z-depth-2 ;
+    }
+//    
+//    .pp-gallery-item{
+//        width: auto !important;
+//    }
+}
+
+@mixin addColorStyle($color, $text-color){
+    .pp-gallery-filters li{
+     &:hover{ 
+            background-color: $color;
+            color: $text-color;   
+        }
+    }
+    
+    .pp-filter-active{
+        background-color: $color !important;
+        color: $text-color !important;   
+    }
+}
+
+.lb-filterable-gallery-accent{
+      @include addColorStyle($accent-color, $accent-text);
+}
