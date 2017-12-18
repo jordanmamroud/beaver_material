@@ -1,0 +1,14 @@
+//used for elevating columns not right place should make separate column file. 
+.lb-col-elevate .fl-col-content{
+    @include addMaterialInactive();
+ 
+}
+
+// adding margin on mobile so that the column has space on mobile otherwise it takes full width.
+@media #{$small-and-down}{
+   .fl-col[data-node] .fl-col-content{
+        margin-left: 5px ; 
+        margin-right: 5px  ;
+        margin-bottom: 10px  ;
+    }
+}

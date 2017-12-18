@@ -80,6 +80,11 @@
         @include makeButtonHolo($white, $white, $white , $accent-color)
     }
 }
+.lb-btn-holo-primary {
+    .fl-button , .pp-button,  .pp-more-link-button{
+        @include makeButtonHolo($primary-color, $primary-color, $primary-color , $primary-text)
+    }
+}
 
 
 @mixin addButtonAlignment( $position){

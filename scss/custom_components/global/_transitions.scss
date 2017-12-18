@@ -6,3 +6,8 @@
     transition: background-color 300ms ease-in-out;
      background-color: $bg-color !important ; 
 }
+
+@mixin transition-text-color-change(){
+        -webkit-transition: color 300ms; /* For Safari 3.0 to 6.0 */
+        transition: color 300ms; /* For modern browsers */
+}

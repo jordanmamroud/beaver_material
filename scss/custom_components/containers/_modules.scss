@@ -1,23 +1,14 @@
-.lb-module-white{
-    .fl-module{
-        background-color: #fff !important; 
-    }
-}
-// for alternating module color backgrounds. 
-.lb-module-alternate-1{
-     .fl-module:nth-child(odd){
-            background-color: #fff !important; 
-     }
-    .fl-module:nth-child(even){
-            background-color: $light-bg !important; 
-     }       
-}
+
 
 .lb-module-no-space{
     .fl-module-content{
         margin: 0px 0px !important; 
         padding: 0px 0px !important ;
      }
+}
+
+.lb-module-white{
+    .fl-module{ background-color: #fff !important; }
 }
 
 .lb-module-light {  background-color: $light-bg !important;     }
@@ -46,16 +37,13 @@
 
 .lb-module-primary-top .fl-module-content:first-child{      border-top: 2px solid $primary-color !important; }
 
-//used for elevating columns not right place should make separate column file. 
-.lb-col-elevate .fl-col-content{
-    @include addMaterialInactive();
- 
-}
-
-// adding margin on mobile so that the column has space on mobile otherwise it takes full width.
-@media #{$small-and-down}{
-    .lb-col-elevate .fl-col-content{
-        margin-left: 5px !important; 
-        margin-right: 5px !important;
-    }
+// for alternating module color backgrounds,
+//used if multipl modules in a row or column to alternate bg. 
+.lb-module-alternate-1{
+     .fl-module:nth-child(odd){
+            background-color: #fff !important; 
+     }
+    .fl-module:nth-child(even){
+            background-color: $light-bg !important; 
+     }       
 }
