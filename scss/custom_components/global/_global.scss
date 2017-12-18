@@ -29,11 +29,19 @@ a {
   // Gets rid of tap active state
   -webkit-tap-highlight-color: transparent;
 }
+.lb-center-all{
+  .fl-row-content-wrap{
+      text-align: center ;
+       .fl-button-wrap, h1,h2,h3,h4,h5,h6, p, img{
+            text-align: center !important ; 
+        }
+  }
+}
 
 // add class to center on mobile here, right now only doing buttons
 .lb-center-mobile{
-     @media only screen and (max-width: 500px) {
-        .fl-button-wrap {
+   @media #{$small-and-down} {
+        .fl-button-wrap, h1,h2,h3,h4,h5,h6, p, img{
             text-align: center !important ; 
         }
     }

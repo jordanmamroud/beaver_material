@@ -1,7 +1,7 @@
 //used for elevating columns not right place should make separate column file. 
 .lb-col-elevate .fl-col-content{
     @include addMaterialInactive();
- 
+    border-radius: $border-radius ;
 }
 
 // adding margin on mobile so that the column has space on mobile otherwise it takes full width.
