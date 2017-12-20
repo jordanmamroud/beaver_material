@@ -1,11 +1,6 @@
 
 .lb-section .fl-row-content-wrap{ 
 	padding: $section-vertical-padding  20px !important;
-
-	.fl-heading-text {
-		font-size: $section-title-font-size !important;
-		 
-	}
 }
 
 @mixin setSectionStyle($bg-color, $header-text-color, $body-text-color){
