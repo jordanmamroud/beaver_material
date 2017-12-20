@@ -1,4 +1,5 @@
 
+
 // ===========================================================================
 // Materialize variables
 // ==========================================================================
@@ -34,22 +35,20 @@
 // 1. Colors
 // =======================================================================================
 
-$primary-color:#6f9907 ;
+$primary-color: #0a2972 ;
 $primary-text: #fff; 
 
-$accent-color: #6f9907;
- 
+$accent-color: #ddaa10;
 $accent-text: #fff; 
 
 $tertiary-color: #aaa;
 $tertiary-text: #000; 
 
-
 $default-text-color:#808080 ;
 $transparent-color: rgba(0, 0, 0, 0) ;
 
 $light: #f6f8fb;
-$dark: #0d3542;
+$dark: #203C7E;
 
 $primary-color-light: lighten($primary-color, 15%) !default;
 $primary-color-dark: darken($primary-color, 15%) !default;
@@ -60,7 +59,6 @@ $error-color: color("red", "base") !default;
 
 $white: #fff ; 
 $off-black: rgba(0, 0, 0, 0.87) !default;
-
 
 // Defaults 
 //===========================================================================
@@ -82,33 +80,26 @@ $h4-fontsize: 1.5rem !default;
 $h5-fontsize: 1.25rem !default;
 $h6-fontsize: 1.0rem !default;
 
-// 2. Header 
-//===========================================================================
-$header-active: $primary-color;
-$header-inactive:#000;
-$header-hover: $accent-color;
-$header-bg:rgba(242,242,242, 1);
-$logo-height: auto ; 
-$topbar-item-position: right; 
 
 // 2. Header 
-//===========================================================================
-$header-active: $primary-color;
+//==========================================================================
+$header-active: $accent-color;
 $header-inactive:#000;
 $header-hover: $accent-color;
 $header-bg:rgba(242,242,242, 1);
-$logo-height: auto ; 
-$topbar-item-position: center; 
+$logo-height: 30px ; 
+$topbar-item-position: right; 
+
 
 // Hero Image
 //===========================================================================
-$page-title-color: #fff; 
-$page-title-font-size: $h2-fontsize; 
-$page-title-font-size-mobile: $h3-fontsize; 
+$page-title-color: #fff ; 
+$page-title-font-size: $h2-fontsize ; 
+$page-title-font-size-mobile: $h3-fontsize ; 
 
-$section-title-color: #0a2972;
-$hero-image-padding: 80px; 
-$hero-image-padding-mobile: 30px;
+$section-title-color: #0a2972 ;
+$hero-image-padding: 80px ; 
+$hero-image-padding-mobile: 30px ;
 
 
 // Sections && container
@@ -135,10 +126,12 @@ $separator-width: 80%;
 // Footer
 // ==========================================================================
 
-$footer-font-color: #000 !default;
-$footer-bg-color: $primary-color !default;
+$footer-font-color: $primary-color  !default;
 $footer-font-size: 16px; 
 $footer-item-margin: 10px ;
+// not working right now
+$footer-bg-color: $primary-color !default;
+
 
 // Timeline   
 //===========================================================================
@@ -154,7 +147,14 @@ $infobox-title-text-size: $large-text ;
 $infobox-body-text-size: $medium-text ;
 
 
-// Buttons
+
+// 2. Badges
+//===========================================================================
+$badge-bg-color: $secondary-color !default;
+$badge-height: 22px !default;
+
+
+// 3. Buttons
 //===========================================================================
 $button-small-width: 100px;
 $button-small-padding: 10px;
@@ -204,7 +204,6 @@ $button-floating-radius: 50% !default;
 $content-grid-img-height: 200px ;
 // bottom margin has extra cause hover material gets cut off on bottom without it.
 $content-grid-post-margin: 10px 10px 20px 10px ; 
-
 
 // Forms
 // =========================================================================
@@ -277,16 +276,9 @@ $switch-unchecked-bg: #F1F1F1 !default;
 $switch-unchecked-lever-bg: rgba(0,0,0,.38) !default;
 $switch-radius: 15px !default;
 
-// ending forms here 
 
+//forms end here. 
 
-
-
-
-// 2. Badges
-//===========================================================================
-$badge-bg-color: $secondary-color !default;
-$badge-height: 22px !default;
 
 
 // 4. Cards
@@ -296,6 +288,8 @@ $card-padding: 24px !default;
 $card-bg-color: #fff !default;
 $card-link-color: color("orange", "accent-2") !default;
 $card-link-color-light: $accent-color ;
+
+
 
 // 5. Carousel
 // ==========================================================================
@@ -352,7 +346,6 @@ $dropdown-item-height: 50px !default;
 // ==========================================================================
 
 $roboto-font-path: "../fonts/roboto/" !default;
-
 
 
 
@@ -443,8 +436,6 @@ $toast-color: #323232 !default;
 $toast-text-color: #fff !default;
 $toast-action-color: #eeff41;
 
-
-// 22
 
 // 23. Flow Text
 // ==========================================================================
