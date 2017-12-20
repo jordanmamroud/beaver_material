@@ -1,9 +1,6 @@
 style.scss
 style.css
-<<<<<<< HEAD
-=======
+_variables_in_use.scss 
 variables_in_use.scss
->>>>>>> 5bcf47b95b7d2f0e87bf9506706e45d0ca68e385
-_variables_in_use.scss
 .sass-cache/
 *.css.map
