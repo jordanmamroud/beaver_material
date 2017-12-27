@@ -39,7 +39,7 @@
 
 @media (max-width: 767px){
     .fl-page-nav-toggle-icon.fl-page-nav-toggle-visible-mobile .fl-page-nav .navbar-toggle {
-        top: 60px !important;
+        top: $hamburger-top-position !important;
         transform: translateY(-50%) !important;
     }
 }
