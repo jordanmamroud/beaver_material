@@ -16,18 +16,34 @@
 //=========================================================================================================
 @mixin addInputBottomStyle($highlight-color){
   // using browser default makes it highlight correctly idk why
-    input:not(.browser-default), textarea,select{
+    
+    // targeting pp-contact-form as well to ensure override. 
+    input:not(.browser-default), textarea,select, 
+    .pp-contact-form input[type=email] ,.pp-contact-form input[type=tel], .pp-contact-form input[type=text], .pp-contact-form textarea {
         background-color: transparent;
-        border: none !important;
-        border-radius: 0px;
+        border-top: none !important;
+        border-right: none !important;
+        border-left: none !important ;
+        border-bottom: 1px solid $input-border-color ;
+        border-radius: 0px !important;
         outline: none;
         width: 100%;
-        transition: $input-transition;
+        
+        &:focus:not([readonly]) {
+            border-bottom: 1px solid $highlight-color;
+            -moz-transition:border-bottom .5s;
+            -ms-transition:border-bottom .5s;
+             -o-transition:border-bottom .5s;
+                transition:border-bottom .5s;
+
+        }
+        
+        // Focused label style only works if label comes after the input field since that is what plus is for
+        &:focus:not([readonly]) + label {
+            color: $highlight-color;
+        }
     }
-    input:not(:focus), textarea:not(:focus){
-        transition: $input-transition;
-        border-bottom: 1px solid $input-border-color !important;
-    }
+    
     
     input:not(.browser-default), textarea, select{
        // Focused input style

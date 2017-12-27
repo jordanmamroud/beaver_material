@@ -27,6 +27,12 @@ span a , p a{
 	font-size: $h4-fontsize;
 }
  
-.fl-widget div a {
-	color: $accent-color !important;
+.fl-widget div {
+    a{
+        color: $link-color !important;
+    }
+    a:hover{
+      color: $link-hover !important;
+    }
+	
 }
