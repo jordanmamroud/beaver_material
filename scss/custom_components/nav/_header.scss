@@ -4,11 +4,12 @@
 .fl-page-nav-wrap .navbar-nav > li.current-menu-item > a { color: $header-active !important;}
 .fl-page-nav-wrap .navbar-nav > li.current-menu-item > a:active { color: $header-active !important;}
 
-.fl-page-nav-wrap .navbar-nav > li.current-menu-item > a { color: $header-active !important;}
-
 
 .fl-page-nav-wrap .navbar-nav a{color: $header-inactive !important;}
-.fl-page-nav-wrap .navbar-nav a:hover{ color: $header-hover !important; }
+.fl-page-nav-wrap .navbar-nav li a:hover { color: $header-hover !important; }
+.fl-page-nav-wrap .navbar-nav  a:hover { color: $header-hover !important; }
+
+
 .sub-menu{ border-top:3px solid  $header-hover !important;}
 .sub-menu li:hover{  background-color: $light-bg !important; }
 
