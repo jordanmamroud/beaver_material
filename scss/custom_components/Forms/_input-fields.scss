@@ -8,19 +8,15 @@
     input, select, textarea {
         border-radius: $border-radius !important ;
 
-        &:hover {
-             @extend .z-depth-1 ; 
-        }
+        &:hover { @extend .z-depth-1 ; }
     }
 }
 
-
-
 // Input bottom style-- input bottom means border on bottom of input fields only 
 //=========================================================================================================
-@mixin addInputBottomStyle(){
+@mixin addInputBottomStyle($highlight-color){
   // using browser default makes it highlight correctly idk why
-    input:not(.browser-default), textarea{
+    input:not(.browser-default), textarea,select{
         background-color: transparent;
         border: none !important;
         border-radius: 0px;
@@ -30,12 +26,10 @@
     }
     input:not(:focus), textarea:not(:focus){
         transition: $input-transition;
-        border-bottom: 1px solid #aaa !important;
+        border-bottom: 1px solid $input-border-color !important;
     }
-}
-
-@mixin addBottomBorderEffects($highlight-color){
-    input:not(.browser-default), textarea{
+    
+    input:not(.browser-default), textarea, select{
        // Focused input style
         &:focus:not([readonly]) {
             border-bottom: 1px solid $highlight-color;
@@ -49,20 +43,33 @@
     }
 }
 
-.lb-input-bottom {   @include addInputBottomStyle(); }
-.lb-input-bottom-accent{    @include  addBottomBorderEffects($accent-color); }
-.lb-input-bottom-primary {     @include addBottomBorderEffects($primary-color) ; }
+//@mixin addBottomBorderEffects($highlight-color){
+//    input:not(.browser-default), textarea, select{
+//       // Focused input style
+//        &:focus:not([readonly]) {
+//            border-bottom: 1px solid $highlight-color;
+//            box-shadow: 0 1px 0 0 $highlight-color;
+//        }
+//
+//        // Focused label style only works if label comes after the input field since that is what plus is for
+//        &:focus:not([readonly]) + label {
+//            color: $highlight-color;
+//        }
+//    }
+//}
+
+
+.lb-input-bottom-accent{  @include addInputBottomStyle($accent-color); }
+.lb-input-bottom-primary {     @include addInputBottomStyle($primary-color); }
 
 //input full styling -- input full means full border
 //========================================================================================================
-
-
-
 @mixin addInputFullEffects( $highlight-color){
      input, select, textarea {
-        &:focus {
-            border: 1px solid $highlight-color  !important;
-        }
+        
+        border: 1px solid $input-border-color !important; 
+         
+        &:focus {   border: 1px solid $highlight-color  !important; }
     }
 }
 
@@ -70,7 +77,7 @@
 .lb-input-full-primary{   @include addInputFullEffects($primary-color) }
 
 // this is for the space between the validation message and the input it is validating.
-
+// this is specifically for contact form 7.
 .wpcf7-not-valid{
      margin-bottom: $validation-message-margin !important;
 }

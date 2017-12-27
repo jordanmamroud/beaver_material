@@ -31,8 +31,6 @@
     }       
 }
 
-
-
 .lb-form-small{ @include setFormSize( $label-small-text-size, $input-small-height  ); }
 .lb-form-medium{    @include setFormSize( $label-medium-text-size, $input-medium-height   ); }
 .lb-form-large{ @include setFormSize( $label-large-text-size, $input-large-height );}
