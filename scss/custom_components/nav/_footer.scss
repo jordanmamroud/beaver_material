@@ -10,11 +10,11 @@
 .lb-footer{
     
     p{
-        display: inline-block;
-        margin-right: $footer-item-margin;
+        display: inline-block ;
+        margin-right: $footer-item-margin ;
         color: $white ;
-        font-size: $footer-font-size;
-
+        text-align: center ;
+        font-size: $footer-font-size ;
     }
     
     .lb-footer-nav {
