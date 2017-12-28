@@ -4,51 +4,24 @@
 // ==========================================================================
 //
 // Table of Contents:
-//
-//  1. Colors
-//  2. Badges
-//  3. Buttons
-//  4. Cards
-//  5. Carousel
-//  6. Collapsible
-//  7. Chips
-//  8. Date + Time Picker
-//  9. Dropdown
-//  10. Fonts
-//  11. Forms
-//  12. Global
-//  13. Grid
-//  14. Navigation Bar
-//  15. Side Navigation
-//  16. Photo Slider
-//  17. Spinners | Loaders
-//  18. Tabs
-//  19. Tables
-//  20. Toasts
-//  21. Typography
-//  22. Footer
-//  23. Flow Text
-//  24. Collections
-//  25. Progress Bar
 
 // 1. Colors
-// =======================================================================================
+// =====================================================================================
 
-$primary-color:#0a2972 ;
+$primary-color:#063b0c ;
 $primary-text: #fff; 
 
-$accent-color: #db67d2;
+$accent-color: #2dc33e; 
 $accent-text: #fff; 
 
 $tertiary-color: #aaa;
 $tertiary-text: #000; 
 
-
 $default-text-color:#808080 ;
 $transparent-color: rgba(0, 0, 0, 0) ;
 
 $light: #f6f8fb;
-$dark: #3c3636;
+$dark: #0d3542;
 
 $primary-color-light: lighten($primary-color, 15%) !default;
 $primary-color-dark: darken($primary-color, 15%) !default;
@@ -80,10 +53,11 @@ $h3-fontsize: 2rem !default;
 $h4-fontsize: 1.5rem !default;
 $h5-fontsize: 1.25rem !default;
 $h6-fontsize: 1.0rem !default;
+$p-fontsize: 1.2rem ;
 
 // Header 
 //==========================================================================
-$header-active: $accent-color ;
+$header-active: #000;
 $header-inactive:#000 ;
 $header-hover: $accent-color ;
 $header-bg:rgba(242,242,242, 1) ;

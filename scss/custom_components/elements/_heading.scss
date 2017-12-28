@@ -47,23 +47,3 @@
 .lb-heading-border-accent { @include addBorderToHeading($accent-color) ; }
 .lb-heading-border-primary{  @include addBorderToHeading($primary-color); 	}
 
-//these are styles for bb-theme header
-// adds elevation and border radius to the submenu.
-//.sub-menu{
-//    @extend .z-depth-5 ;
-//    border-radius: $border-radius ;
-//}
-
-//this adds a border bottom as a menu item is being hovered over
-//.navbar-nav{
-//    .menu-item a{
-//        -webkit-transition:border-bottom 300ms;
-//        -moz-transition:border-bottom 300ms;
-//        -ms-transition:border-bottom 300ms;
-//         -o-transition:border-bottom 300ms;
-//            transition:border-bottom 300ms;
-//    }
-//    .menu-item a:hover {
-//        border-bottom:  4px solid $accent-color !important ;
-//    }
-//}
