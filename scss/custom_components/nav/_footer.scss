@@ -8,9 +8,11 @@
 }
 
 .lb-footer{
+    .fl-row-content-wrap{
+        background-color: $footer-bg-color !important;
+    }
     
     p{
-        display: inline-block ;
         margin-right: $footer-item-margin ;
         color: $white ;
         text-align: center ;
