@@ -16,55 +16,55 @@
 //
 //
 ////need to be imported first normalize is for reset variables is dependent on colors everything is dependent on variables
-//@import "components/normalize";
-//@import "components/color";
-//@import "/variables/variables_in_use";
+//@import "scss/components/normalize";
+//@import "scss/components/color";
+//@import "scss/variables/variables_in_use";
 //
 //// Order matters here do not mess with it . 
 //// Global 
 ////============================================================================================================'
-//@import "custom_components/global/transitions";
-//@import "custom_components/global/typography";
-//@import  "custom_components/global/global";
-//@import "custom_components/global/backgrounds";
-//@import "custom_components/global/defaults";
-//@import "custom_components/global/material";
+//@import "scss/components/global/transitions";
+//@import "scss/components/global/typography";
+//@import  "scss/components/global/global";
+//@import "scss/components/global/backgrounds";
+//@import "scss/components/global/defaults";
+//@import "scss/components/global/material";
 //
 //// nav 
 ////===========================================================================================================
-//@import "custom_components/nav/header";
-//@import "custom_components/nav/footer";
+//@import "scss/components/nav/header";
+//@import "scss/components/nav/footer";
 //
 //
 ////containers 
 ////============================================================================================================
-//@import "custom_components/containers/modules";
-//@import "custom_components/containers/sections";
-//@import "custom_components/containers/columns";
+//@import "scss/components/containers/modules";
+//@import "scss/components/containers/sections";
+//@import "scss/components/containers/columns";
 //
 ////elements
 ////============================================================================================================
-//@import "custom_components/elements/buttons";
-//@import  "custom_components/elements/heading";
-//@import  "custom_components/elements/images";
-//@import "custom_components/elements/separators";
-//@import "custom_components/elements/scrollbox";
+//@import "scss/components/elements/buttons";
+//@import  "scss/components/elements/heading";
+//@import  "scss/components/elements/images";
+//@import "scss/components/elements/separators";
+//@import "scss/components/elements/scrollbox";
 //
 //
 ////Advanced Modules 
 ////===========================================================================================================
-//@import "custom_components/advanced_modules/callout";
-//@import "custom_components/advanced_modules/tables";
+//@import "scss/components/advanced_modules/callout";
+//@import "scss/components/advanced_modules/tables";
 //
 //
 ////imports for advanced_modules/powerpack=====================================================================
-//@import "custom_components/advanced_modules/powerpack/defaults" ;
-//@import "custom_components/advanced_modules/powerpack/dual-button" ;
-//@import "custom_components/advanced_modules/powerpack/infobox";
-//@import "custom_components/advanced_modules/powerpack/timeline";
-//@import "custom_components/advanced_modules/powerpack/content-grid";
+//@import "scss/components/advanced_modules/powerpack/defaults" ;
+//@import "scss/components/advanced_modules/powerpack/dual-button" ;
+//@import "scss/components/advanced_modules/powerpack/infobox";
+//@import "scss/components/advanced_modules/powerpack/timeline";
+//@import "scss/components/advanced_modules/powerpack/content-grid";
 //
 ////imports for forms 
 ////===========================================================================================================
-//@import "custom_components/forms/input-fields";
-//@import "custom_components/forms/form-styles";
+//@import "scss/components/forms/input-fields";
+//@import "scss/components/forms/form-styles";
