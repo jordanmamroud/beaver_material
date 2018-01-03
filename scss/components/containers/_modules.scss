@@ -20,18 +20,16 @@
 .lb-module-primary { background-color: $primary-color !important; }
 
 //deprecating lb-elevate do not use, use lb-module-elevate instead.
+.lb-elevate{
+        @include addMaterial();
+}
+
 // used for elevating content module containers most used thats why no type prefix.
-.lb-elevate .fl-module-content:first-child {
+.lb-module-elevate .fl-module-content:first-child {
     @include addMaterial();
 }
 
-// targets each single child module ie if header and text editor were in column both would be targeted for elevation and separated. 
-.lb-module-elevate{
-     .fl-module{
-        @include addMaterial();
-        margin: 10px 10px !important;
-     }
-}
+
 
 // need to add dark module and alternate 
 .lb-module-accent-top .fl-module-content:first-child {      border-top: 2px solid $accent-color !important; }
