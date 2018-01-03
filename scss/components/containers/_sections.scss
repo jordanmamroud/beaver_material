@@ -7,24 +7,46 @@
     .fl-row-content-wrap{
 	 background-color: $bg-color !important; 
 	}
-	 .fl-heading-text{	color: $header-text-color ; }
 
 	  p{ 	color: $body-text-color ;	}
 
 	h1,h2,h3,h4,h5,h6{		
+        
+        color: $header-text-color ;
+        
 		span a {
 			color: $header-text-color ;
 		}
 	}
 }
+
+// light and dark have custom header/body default options since they are most commonly used, 
+// adding them for would be overkill. 
 //styles background adn text for light sections ==================================================
-.lb-section-light { @include setSectionStyle($light-bg, $light-bg-header-text, $light-bg-body-text); }
+.lb-section-light { @include setSectionStyle($light-bg, $light-bg-header-text, $light-bg-body-text);
+}
 
 // styles background and text for dark sections ================================================
 .lb-section-dark{
     @include setSectionStyle($dark-bg, $dark-bg-header-text, $dark-bg-body-text);
 }
 
+
+.lb-section-accent{
+    @include setSectionStyle($accent-color, $accent-text, $accent-text);
+}
+
+.lb-section-primary{
+    @include setSectionStyle($primary-color, $primary-text, $primary-text) ;
+}
+
+.lb-section-grey{
+    @include setSectionStyle($grey, $white, $white) ;
+}
+
+.lb-section-black{
+     @include setSectionStyle($black, $white, $white) ;
+}
 
 // classes for background controls inner text color as well ==================================
 @mixin addBgColor($bg-color, $bg-header-text, $bg-body-text){
@@ -54,8 +76,4 @@
 
 .lb-accent-bg{
     @include addBgColor($accent-color, $accent-text ,  $accent-text);
-}
-/*spaces columns vertically */ 
-.lb-vertical-col-space .fl-col-group{
-	margin-top: 10px !important; 
 }

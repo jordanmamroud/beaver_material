@@ -1,4 +1,5 @@
 .lb-filterable-gallery{
+    // for filter titles
     .pp-gallery-filters li {
         border-radius:  $border-radius !important;
         @include addMaterial();
@@ -6,14 +7,22 @@
             @extend .hoverable ; 
         }
     }
+    
+    // for grid item container "border-radius top does not work here thats why doing below
     .pp-gallery-grid-item  {
+        border-radius: $border-radius ; 
         @include addMaterial();
-//         @extend .z-depth-2 ;
+    }    
+    
+    // targets just the image of the grid item. 
+    .pp-photo-gallery-content{
+            border-top-left-radius: $border-radius;
+            border-top-right-radius: $border-radius;
+         &:hover{             
+            @extend .hoverable ; 
+        }
     }
-//    
-//    .pp-gallery-item{
-//        width: auto !important;
-//    }
+ 
 }
 
 @mixin addColorStyle($color, $text-color){
