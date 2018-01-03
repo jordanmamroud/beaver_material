@@ -1,10 +1,12 @@
 
-/* header styling */
+//function for controlling header styling from variables 
+// If not used header controlled in customizer 
+    
 .fl-page-header {background-color: $header-bg; }
 .fl-page-nav-wrap .navbar-nav > li.current-menu-item > a { color: $header-active !important;}
 .fl-page-nav-wrap .navbar-nav > li.current-menu-item > a:active { color: $header-active !important;}
 
-
+//makes hover transition color easier
 .fl-page-nav-wrap .navbar-nav a{
     @include transition-text-color-change();
     color: $header-inactive !important;
@@ -12,8 +14,6 @@
 
 .fl-page-nav-wrap .navbar-nav li a:hover { color: $header-hover !important; }
 .fl-page-nav-wrap .navbar-nav  a:hover { color: $header-hover !important; }
-
-
 
 .navbar-nav li a {
     font-size: $nav-item-fontsize !important ; 
