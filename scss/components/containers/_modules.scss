@@ -19,6 +19,7 @@
 
 .lb-module-primary { background-color: $primary-color !important; }
 
+//deprecating lb-elevate do not use, use lb-module-elevate instead.
 // used for elevating content module containers most used thats why no type prefix.
 .lb-elevate .fl-module-content:first-child {
     @include addMaterial();
