@@ -7,23 +7,46 @@
     }
 }
 
-.fl-form-field input:active, .lb-accent textarea:active,.lb-accent input:focus ,.lb-accent textarea:focus {
-	 border-color: $accent-color !important;
-}
-// does not belong here.
 
-/*spaces columns vertically */ 
-.lb-vertical-col-space .fl-col-group{
-	margin-top: 10px !important; 
-}
-
+/* default internal link styling */
 span a , p a{
-	color: $link-color !important;
+	color: $link-color ;
 	&:hover{
-		color: $link-hover !important; 
+		color: $link-hover ; 
 	}
 }
 
+
+/*default button style dont make more specific or will override _button styles*/
+.fl-builder-content a.fl-button {
+  background: $accent-color ;
+}
+
+.fl-builder-content a.fl-button span {
+  font-size: $button-font-size;
+}
+
+/* default heading text styling */
+h1,h2,h3,h4,h5,h6{
+    color: $heading-text-color;
+    
+    span, span a {
+        color: $heading-text-color;
+    }
+}
+
+/* default body text styling */
+p{
+    color: $p-text-color ;
+}
+
+/* default input style */
+.fl-form-field input:active, .lb-accent textarea:active,.lb-accent input:focus ,.lb-accent textarea:focus {
+	 border-color: $accent-color !important;
+}
+
+
+/*default widget styling */
 .fl-widget li strong{
 	color: $black;
 	font-size: $h4-fontsize;
@@ -35,6 +58,5 @@ span a , p a{
     }
     a:hover{
       color: $link-hover !important;
-    }
-	
+    }	
 }

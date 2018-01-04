@@ -31,7 +31,6 @@
     @include setSectionStyle($dark-bg, $dark-bg-header-text, $dark-bg-body-text);
 }
 
-
 .lb-section-accent{
     @include setSectionStyle($accent-color, $accent-text, $accent-text);
 }
@@ -41,7 +40,7 @@
 }
 
 .lb-section-grey{
-    @include setSectionStyle($grey, $white, $white) ;
+    @include setSectionStyle($grey , $white, $white) ;
 }
 
 .lb-section-black{

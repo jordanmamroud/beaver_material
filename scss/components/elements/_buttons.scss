@@ -1,5 +1,4 @@
 
-
 // Raised Button
 .lb-btn {
     .fl-button , .pp-button ,  .pp-more-link-button{
@@ -51,7 +50,7 @@
 @mixin makeButtonHolo($border-color, $text-color, $hover-bg-color, $hover-text-color){
     border: 1px solid $border-color !important;
     color: $text-color !important; 
-    background-color: $transparent-color !important;
+    background-color: $transparent !important;
     
     &:hover {
       @include transition-bg-change($hover-bg-color);
@@ -100,27 +99,29 @@
    text-align: right !important ; 
  }
 
-@mixin sizeButton($btn-width, $padding){
-    width: $btn-width ;
-    padding: $padding 0px $padding 0px !important;
+@mixin sizeButton($btn-width, $padding, $font-size){
+    a.fl-button, .pp-button,  .pp-more-link-button{
+        width: $btn-width ;
+        padding: $padding 0px $padding 0px !important;
+        font-size: $font-size ;
+        span{
+            font-size: $font-size ;
+        }
+    }
 }
 
 .lb-btn-small{
-    .fl-button, .pp-button,  .pp-more-link-button {
-        @include sizeButton($button-small-width, $button-small-padding);
-    }
+    @include sizeButton($button-small-width, $button-small-padding, $button-small-font-size);
+    
 }
 
 .lb-btn-medium{
-    .fl-button, .pp-button,  .pp-more-link-button {
-        @include sizeButton($button-medium-width,  $button-medium-padding);
-    }
+    @include sizeButton($button-medium-width,  $button-medium-padding, $button-medium-font-size );
 }
 
 .lb-btn-large {
-    .fl-button, .pp-button,  .pp-more-link-button{
-        @include sizeButton($button-large-width,  $button-large-padding);
-    }
+        @include sizeButton($button-large-width,  $button-large-padding, 
+$button-large-font-size);
 }
   
  

@@ -22,26 +22,21 @@ $accent-text: #fff;
 
 $success-color: color("green", "base") !default;
 $error-color: color("red", "base") !default;
-$transparent-color: rgba(0, 0, 0, 0) ;
 
 $light: #f6f8fb;
 $dark: #3c3636;
-$white: #fff ; 
-$black: rgba(0, 0, 0, 0.87) !default;
-$grey: #808080 ;
+
 
 // Defaults 
 //===========================================================================
 $link-color: $primary-color ; 
 $link-hover: $accent-color ;
+$button-font-size: 16px ;
+$heading-text-color: $black ;
+$p-text-color: $grey ; 
 
 // Typography
 //===========================================================================
-$small-text: 1.0rem; 
-$medium-text: 1.20rem ;
-$large-text: 1.75rem ;
-$default-font-size: 20px; 
-
 
 $h1-fontsize: 3rem !default;
 $h2-fontsize: 2.5em !default;
@@ -50,7 +45,10 @@ $h4-fontsize: 1.5rem !default;
 $h5-fontsize: 1.25rem !default;
 $h6-fontsize: 1.0rem !default;
 $p-fontsize: 1.2rem ;
-$nav-item-fontsize: 16px ;
+$nav-item-fontsize: 20px ;
+$button-small-font-size: 14px ;
+$button-medium-font-size: 18px ;
+$button-large-font-size: 20px ;
 
 // Header 
 //==========================================================================
@@ -73,7 +71,7 @@ $footer-item-margin: 10px ;
 $footer-item-hover-color: #aaa; 
 $footer-item-display: inline-block ; 
 
-
+// footer social refers to social icons.
 $footer-social-size: 23px; 
 $footer-social-color: $white ; 
 $footer-social-hover-color: $accent-color; 
@@ -120,9 +118,6 @@ $timeline-info-bg: $light-bg ;
 
 //Infobox
 //===========================================================================
-$infobox-title-text-size: $large-text ;
-$infobox-body-text-size: $medium-text ;
-
 
 // Buttons
 //===========================================================================
@@ -183,11 +178,11 @@ $form-title-color: $primary-color ;
 $form-accent: $primary-color ;
 
 // small form sizes 
-$label-small-text-size: $small-text ;
+$label-small-text-size: $p-fontsize ;
 $input-small-height: 40px ;
  
 // medium form sizes
-$label-medium-text-size: $medium-text ;
+$label-medium-text-size: 1.2rem ;
 $input-medium-height: 45px ;
   
 // large form sizes
