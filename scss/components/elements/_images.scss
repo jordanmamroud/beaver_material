@@ -19,18 +19,12 @@
 	.lb-hero-image .fl-row-content-wrap{
 		    padding: $hero-image-padding-mobile 0px !important;
 	}
-	.lb-hero-image {
-		h1,h2,h3,h4,h5{
-			font-size: $page-title-font-size-mobile!important;
-		}
-	}
+	
 }
 
 @media only screen and (min-width: 500px) { 
 	.lb-hero-image .fl-row-content-wrap{
 		 padding: $hero-image-padding 0px !important;
 	}
-	.lb-hero-image h1{
-		font-size: $page-title-font-size !important;
-	}
+	
 }

@@ -1,4 +1,34 @@
 
+html , body {
+ box-sizing: border-box;
+
+}
+
+*, *:before, *:after {
+ box-sizing: inherit;
+}
+
+main {
+  // flex: 1 0 auto;
+}
+
+ul {
+  &:not(.browser-default) {
+    padding-left: 0;
+    list-style-type: none;
+
+    & > li {
+      list-style-type: none;
+    }
+  }
+}
+
+a {
+	color: $link-color;
+	text-decoration: none;
+  // Gets rid of tap active state
+  -webkit-tap-highlight-color: transparent;
+}
 
 
 @media only screen and (max-width: 900px) {

@@ -100,7 +100,7 @@
  }
 
 @mixin sizeButton($btn-width, $padding, $font-size){
-    a.fl-button, .pp-button,  .pp-more-link-button{
+    a.fl-button, .pp-button,  .pp-more-link-button, button{
         width: $btn-width ;
         padding: $padding 0px $padding 0px !important;
         font-size: $font-size ;
@@ -112,7 +112,6 @@
 
 .lb-btn-small{
     @include sizeButton($button-small-width, $button-small-padding, $button-small-font-size);
-    
 }
 
 .lb-btn-medium{
@@ -124,6 +123,10 @@
 $button-large-font-size);
 }
   
+.lb-btn-full{
+    @include sizeButton(100% ,  $button-large-padding, 
+    $button-large-font-size);
+}
  
 // // Flat button
 // .btn-flat {

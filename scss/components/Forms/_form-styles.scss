@@ -8,6 +8,7 @@
     }
 }
 
+
 // form sizes
 //==============================================================================================
 @mixin setFormSize($text-size, $height){
@@ -38,15 +39,20 @@
 
 // overall form styles 
 //==============================================================================================
-.lb-form-3 {
+.lb-cf7 {
+  
+    form{
+            padding: 20px ;
+    }
+
     label {
-        margin: 0;
+        margin-top: 30px;
         font-weight: 400;
         color: $form-label-color ;
     }
 
     input {
-        margin-bottom: 5px;
+        margin-bottom: 5px ;
         height: auto;
         padding: 5px 5px 3px;
     }
@@ -73,7 +79,19 @@
     }
    .input-row label.help {
       font-size: 11px;
-    }    
+    }   
+    
+    button{ margin-top:10px ; margin-bottom: 10px ; }
+
+    div.wpcf7-validation-errors{
+        border: none !important ;
+    }
+    // this is for the space between the validation message and the input it is validating.
+    // this is specifically for contact form 7.
+    .wpcf7-not-valid{
+         margin-bottom: $validation-message-margin !important;
+    }
+
 }
 
 
