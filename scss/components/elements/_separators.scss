@@ -20,7 +20,7 @@
 
 @mixin styleColoredSeparator($color){
     .fl-separator{
-        border-top: 1px solid $accent-color  !important;  
+        border-color: $accent-color  !important;  
     }
 }
 

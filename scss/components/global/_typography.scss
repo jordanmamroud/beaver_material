@@ -1,55 +1,4 @@
 
-//controls global text styling
-html , body {    
-    line-height: 1.5;
-    
-    @media #{$large-and-up}{
-        font-size: 16px ; 
-    }
-    
-    @media #{$medium-only}{
-        font-size: 14px;
-    }
-    
-    @media #{$small-and-down}{
-        font-size: 12px ;
-    }
-  font-family: "Roboto", sans-serif;
-  font-weight: normal;
-  color: $black;
-}
-
-
-// Header Styles
-@mixin setHeaderStyle($font-size){
-    font-size: $font-size; 
-    line-height: 110%;
-    font-weight: 400;
-    margin: ($font-size / 2) 0 ($font-size / 2.5) 0;
-    
-    a{ font-weight: inherit; }
-}
-
-h1{  @include setHeaderStyle($h1-fontsize);}
-h2{  @include setHeaderStyle($h2-fontsize); }
-h3{  @include setHeaderStyle($h3-fontsize ); }
-h4{  @include setHeaderStyle($h4-fontsize); }
-h5{  @include setHeaderStyle($h5-fontsize );}
-h6{  @include setHeaderStyle($h6-fontsize ); }
-
-
-p{
-    font-size: $p-fontsize ; 
-}
-
-a {
-  text-decoration: none;
-}
-//end global text styling 
-// Text Styless
-em { font-style: italic; }
-strong { font-weight: 500; }
-small { font-size: 75%; }
 .light { font-weight: 300; }
 .thin { font-weight: 200; }
 
@@ -78,6 +27,11 @@ small { font-size: 75%; }
 .lb-text-accent{ @include setTextColor($accent-color); }
 .lb-text-primary{ @include setTextColor($primary-color);}
 
+.lb-text-small{   font-size: 12px ; }
+.lb-text-medium{ font-size: 16px ;}
+.lb-text-large{ font-size: 20px ;}
+
+
 //  gives you finer color control over heading text
 @mixin setHeadingColor($color){
     h1,h2,h3,h4,h5,h6{  
@@ -89,6 +43,10 @@ small { font-size: 75%; }
                 color: $accent-color ;
             }
         }
+        
+        span{
+            color: $color ;
+        }
     }
 }
 
@@ -97,14 +55,14 @@ small { font-size: 75%; }
 .lb-heading-white{  @include setHeadingColor( $white );}
 .lb-heading-dark{  @include setHeadingColor( $dark );}
 .lb-heading-accent {  @include setHeadingColor( $accent-color );}
-
+.lb-heading-primary{ @include setHeadingColor( $primary-color );}
 // this gives you finer color control over body text
-@mixin setBodyColor($color){
+@mixin setBodyTextColor($color){
     p{ color: $color ; }
 }
 
-.lb-body-light{ @include setBodyColor( #aaa ); }
-.lb-body-gray{  @include setBodyColor( #aaa );}
-.lb-body-white{  @include setBodyColor( $white );}
-.lb-body-dark{  @include setBodyColor( $dark );}
-.lb-body-accent {  @include setBodyColor( $accent-color );}
+.lb-body-light{ @include setBodyTextColor( #aaa ); }
+.lb-body-gray{  @include setBodyTextColor( #aaa );}
+.lb-body-white{  @include setBodyTextColor( $white );}
+.lb-body-dark{  @include setBodyTextColor( $dark );}
+.lb-body-accent {  @include setBodyTextColor( $accent-color );}
