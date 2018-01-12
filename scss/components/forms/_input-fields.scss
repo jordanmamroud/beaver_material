@@ -80,10 +80,10 @@
 
 //input full styling -- input full means full border
 //========================================================================================================
-@mixin addInputFullEffects( $highlight-color){
+@mixin addInputFullEffects($highlight-color){
      input, select, textarea {
         
-        border: 1px solid $input-border-color !important; 
+//        border: 1px solid $input-border-color !important; 
          /* controlling border-radius here in case this is used without lb-input, not 100% sure i want to do this */ 
         border-radius: $border-radius; 
         &:focus {   border: 1px solid $highlight-color  !important; }
@@ -92,8 +92,37 @@
 
 .lb-input-full-accent {    @include addInputFullEffects($accent-color)}
 .lb-input-full-primary{   @include addInputFullEffects($primary-color) }
+.lb-input-full-grey {    @include addInputFullEffects($grey)}
+
+// options for setting input background color;
+@mixin addInputBgColor( $bg-color){
+    input, select, textarea {
+        background-color: $bg-color;
+    }
+    
+}
 
 
+.lb-input-bg-white{ @include addInputBgColor( $white);}
+// using both gray spelling so dont have to worry about remembering which one 
+.lb-input-bg-accent{@include addInputBgColor( $accent-color)}
+.lb-input-bg-primary{@include addInputBgColor($primary-color)}
+.lb-input-bg-grey{ @include addInputBgColor($grey); }
+.lb-input-bg-gray{ @include addInputBgColor(  $grey); }
+.lb-input-bg-light-grey{@include addInputBgColor( $light-grey)}
+.lb-input-bg-dark-grey{@include addInputBgColor( $dark-grey)}
+
+// gives control of placeholder color
+@mixin changePlaceholderColor($placeholder-color){
+    ::placeholder{ color: $placeholder-color; }   
+}
+
+.lb-placeholder-white{ @include changePlaceholderColor($white); }
+.lb-placeholder-black{@include changePlaceholderColor($black)}
+.lb-placeholder-grey{@include changePlaceholderColor($grey)}
+.lb-placeholder-light-grey{@include changePlaceholderColor($light-grey)}
+.lb-placeholder-accent{@include changePlaceholderColor($accent-color)}
+.lb-placeholder-primary{@include changePlaceholderColor($primary-color)}
 
 
 

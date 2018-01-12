@@ -57,14 +57,22 @@
         padding: 5px 5px 3px;
     }
 
-    input[type=text], #quote-request-holder .input-row input[type=tel],
+    input[type=text], #quote-request-holder .lb-row input[type=tel],
     input[type=email] {
         color: #333;
     }
-/* .row only works if put in each parent div of contact form 7 inputs */
-    .lb-row{
+/* .row only works if put in each parent div of contact form 7 inputs there needs to be child divs within for some reason applying this to only lb-row div directly does not work, these classes should be added in the cf7 editor*/
+    .lb-row div{
         margin-bottom: 15px;
     }
+    
+    .lb-row label.help {
+        font-size: 11px;
+    }
+    
+   .lb-row label.help {
+      font-size: 11px;
+    }  
      select {
         display: block;
         width: 100%;
@@ -76,13 +84,6 @@
      textarea {
         color: #333;
     }
-
-    .input-row label.help {
-        font-size: 11px;
-    }
-   .input-row label.help {
-      font-size: 11px;
-    }   
     
     button{ margin-top:10px ; margin-bottom: 10px ; }
 
