@@ -1,9 +1,10 @@
+/* this is overriing page footer text probaly should be in defaults */
 .fl-page-footer-text{ 
     a{ 
         color: $footer-font-color !important;
         margin-right: $footer-item-margin;
         font-size: $footer-font-size;
- ; 
+ 
     }
 }
 
@@ -18,8 +19,11 @@
         text-align: center ;
         font-size: $footer-font-size ;
     }
+    .lb-footer-nav-container{
+        
+    }
     
-    .lb-footer-nav {
+    .lb-footer-nav
         li{
             display: $footer-item-display ; 
         }
@@ -51,4 +55,4 @@
             }
         }
     }
-}
+

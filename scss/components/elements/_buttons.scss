@@ -1,14 +1,27 @@
 
 // Raised Button
-.lb-btn {
-    .fl-button , .pp-button ,  .pp-more-link-button{
-          text-decoration: none;
-          text-align: center;
-          border-radius: $border-radius !important;
-          letter-spacing: .5px;
-          transition: .2s ease-out;
-          cursor: pointer;
-          @include addMaterial();
+@mixin raisedButtons(){
+    .lb-btn {
+        .fl-button , .pp-button ,  .pp-more-link-button{
+              text-decoration: none;
+              text-align: center;
+              border-radius: $border-radius !important;
+              letter-spacing: .5px;
+              transition: .2s ease-out;
+              cursor: pointer;
+              @include addMaterial();
+        }
+    }
+}
+
+@mixin flatButtons(){
+    .lb-btn{
+        text-decoration: none;
+        text-align: center;
+        border-radius: $border-radius !important;
+        letter-spacing: .5px;
+        transition: .2s ease-out;
+        cursor: pointer;
     }
 }
 
