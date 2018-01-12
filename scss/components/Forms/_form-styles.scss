@@ -61,7 +61,10 @@
     input[type=email] {
         color: #333;
     }
-
+/* .row only works if put in each parent div of contact form 7 inputs */
+    .row{
+        margin-bottom: 15px;
+    }
      select {
         display: block;
         width: 100%;

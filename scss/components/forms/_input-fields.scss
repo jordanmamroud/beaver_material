@@ -84,7 +84,8 @@
      input, select, textarea {
         
         border: 1px solid $input-border-color !important; 
-         
+         /* controlling border-radius here in case this is used without lb-input, not 100% sure i want to do this */ 
+        border-radius: $border-radius; 
         &:focus {   border: 1px solid $highlight-color  !important; }
     }
 }
