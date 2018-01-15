@@ -25,13 +25,17 @@
 .fl-page-bar a {
     margin-right: 10px !important;
     color: $topbar-item-color !important; 
-     font-size: 16px;
-       &:hover{
+    font-size: 16px;
+    &:hover{
         color: $topbar-item-hover-color !important;
-        }
+    }
     i{
-        color: $accent-color !important; 
-       
+        color: $header-social-color !important; 
+        font-size: $header-social-size !important ;
+        
+        &:hover{
+              color: $header-social-hover-color!important;
+        }
     }
 }
 
@@ -44,6 +48,7 @@
     text-align: $topbar-item-position !important;
 }
 
+//
 @media (max-width: 767px){
     .fl-page-nav-toggle-icon.fl-page-nav-toggle-visible-mobile .fl-page-nav .navbar-toggle {
         top: $hamburger-top-position !important;
