@@ -27,7 +27,7 @@
     color: $topbar-item-color !important; 
      font-size: 16px;
        &:hover{
-        color: $primary-color ;
+        color: $topbar-item-hover-color !important;
         }
     i{
         color: $accent-color !important; 
