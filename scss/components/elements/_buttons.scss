@@ -11,53 +11,53 @@
               cursor: pointer;
               @include addMaterial();
         }
+     
     }
 }
 
 @mixin flatButtons(){
     .lb-btn{
-        text-decoration: none;
-        text-align: center;
-        border-radius: $border-radius !important;
-        letter-spacing: .5px;
-        transition: .2s ease-out;
-        cursor: pointer;
+        .fl-button , .pp-button ,  .pp-more-link-button, .pp-modal-button a{
+            text-decoration: none;
+            text-align: center;
+            border-radius: $border-radius !important;
+            letter-spacing: .5px;
+            transition: .2s ease-out;
+            cursor: pointer;
+        }
     }
+    
 }
 
 /************ mixin for different colored buttons ********************/
 @mixin addButtonStyle( $background, $textColor   ){
-  border: none !important;
-  background-color:  $background !important; 
-  color: $textColor !important; 
-  
-  &:hover {
-        @include transition-bg-change( lighten($background , 10%) );
-  
-  }
-  & span,i  {
-    color: $textColor !important ;
-  }
+    .fl-button,   .pp-button,  .pp-more-link-button, .pp-modal-button a{
+          border: none !important;
+          background-color:  $background !important; 
+          color: $textColor !important; 
+
+          &:hover {
+                @include transition-bg-change( lighten($background , 10%) );
+
+          }
+          & span,i  {
+            color: $textColor !important ;
+          }
+    }
 }
 
 .lb-btn-primary {
-    .fl-button,   .pp-button,  .pp-more-link-button {
-            @include addButtonStyle( $primary-color, $primary-text );
-    }
+        @include addButtonStyle( $primary-color, $primary-text );
 }
 
 .lb-btn-accent {
-    .fl-button,   .pp-button,  .pp-more-link-button {
-        @include addButtonStyle( $accent-color, $accent-text );
-    }
+    @include addButtonStyle( $accent-color, $accent-text );
 }
 
 .lb-btn-light {
-    .fl-button, .lb-btn-accent .pp-button, .pp-more-link-button {
       // using light bgheadertext temporarily just doing to match but if want more control 
       //create separate variable.
       @include addButtonStyle( $light-bg, $light-bg-header-text)
-    } 
 }
 
 @mixin makeButtonHolo($border-color, $text-color, $hover-bg-color, $hover-text-color){
